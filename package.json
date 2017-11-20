@@ -1,0 +1,44 @@
+{
+  "name": "responsys-node-api",
+  "version": "1.0.0",
+  "description": "Responsys REST API connector",
+  "author": "Lisandro Pavetti",
+  "license": "MIT",
+  "homepage": "https://github.com/comparaonline/responsys-node-api#readme",
+  "bugs": {
+    "url": "https://github.com/comparaonline/responsys-node-api/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --outDir ./build",
+    "test": "mocha -r ts-node/register src/**/*.test.ts --timeout=60000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comparaonline/responsys-node-api.git"
+  },
+  "keywords": [
+    "responsys"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/jest": "^21.1.5",
+    "@types/jsonfile": "^4.0.1",
+    "@types/mocha": "^2.2.44",
+    "@types/nock": "^8.2.1",
+    "@types/node-persist": "^0.0.33",
+    "chai": "^4.1.2",
+    "querystring": "^0.2.0",
+    "ts-jest": "^21.2.1",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "tslint-config-airbnb": "^5.3.0",
+    "typescript": "^2.6.1",
+    "mocha": "^4.0.1",
+    "nock": "^9.1.0"
+  },
+  "dependencies": {
+    "node-persist": "^2.1.0",
+    "rest": "^2.0.0"
+  }
+}

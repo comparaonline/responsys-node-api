@@ -1,0 +1,6 @@
+node_modules
+coverage
+yarn-error.log
+.node-persist
+.DS_Store
+build

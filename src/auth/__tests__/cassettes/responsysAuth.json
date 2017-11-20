@@ -1,0 +1,310 @@
+[
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "body": {
+      "recipientData": [
+        {
+          "recipient": {
+            "customerId": "5634169",
+            "emailAddress": "lpavetti@comparaonline.com",
+            "emailFormat": "HTML_FORMAT",
+            "mobileNumber": "951349394"
+          }
+        }
+      ]
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Authentication token expired",
+      "errorCode": "TOKEN_EXPIRED",
+      "detail": "Token expired",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-f822125a040a0d9f05e759d5 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:00 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "Ef3ytY8q0wKLPf6KLvTIlI8rOCiMfjnjdW5W3HpWdQdXWya3y0",
+      "issuedAt": 1511138072187,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-1823125a64fb3ff10306a4aa 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:32 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "body": {
+      "recipientData": [
+        {
+          "recipient": {
+            "customerId": "5634169",
+            "emailAddress": "lpavetti@comparaonline.com",
+            "emailFormat": "HTML_FORMAT",
+            "mobileNumber": "951349394"
+          }
+        }
+      ]
+    },
+    "status": 200,
+    "response": [
+      {
+        "errorMessage": null,
+        "recipientId": 274187665,
+        "success": true
+      }
+    ],
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-1a23125aed0e2f08666b7c90 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:34 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E30oB3Jy24DV85l2ezzgI5H2qmy8_tb4SE8DrWLm0zR9e-erRg",
+      "issuedAt": 1511138075217,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-1b23125a100fe922c8169786 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:35 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=wrong_password&auth_type=password",
+    "status": 400,
+    "response": {
+      "type": "",
+      "title": "Invalid username or password",
+      "errorCode": "INVALID_USER_NAME_PASSWORD",
+      "detail": "Login failed",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-1c23125a2a0fb05bb8be2b3a 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:36 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E7lhHmsw-x5ymVxBR7I5LV2SsSgWmSS1zZ2ZDflQ7a_e0E8AUg",
+      "issuedAt": 1511138077726,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-1d23125a1efc7ef97b22f324 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:37 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "auth_type=token",
+    "status": 200,
+    "response": {
+      "authToken": "EddMv2xQTAnH0IPWcez2chzCzmU3Xz44DV_TsQq_reJQZm3QTg",
+      "issuedAt": 1511138078876,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-1e23125a39fc12cfddbad981 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:38 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "EcNETVfUd_IALGChMqUeIqy11iy4RMYUhnsmr25N69M3VDqs6w",
+      "issuedAt": 1511138079948,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-1f23125a7bfc126feadbf3bf 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:39 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "auth_type=token",
+    "status": 200,
+    "response": {
+      "authToken": "E42GUi08n3O6Fh6ZJQD8oy2-Rp8TVcMz7eAC6LUKpoZ8mBUt0M",
+      "issuedAt": 1511138080968,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-2023125aac0fb31b73287a1d 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:40 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "auth_type=token",
+    "status": 200,
+    "response": {
+      "authToken": "EbMlJcCVuBFeQa_L_NVHZ-oEX4zx1lDpo5efbSlmFQdornIQeg",
+      "issuedAt": 1511138083048,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-2323125ab70f41a6030e55ee 0",
+      "Date",
+      "Mon, 20 Nov 2017 00:34:43 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json"
+    ]
+  }
+]
