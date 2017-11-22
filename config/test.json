@@ -1,0 +1,5 @@
+{
+  "RESPONSYS_AUTH_ENDPOINT": "https://login5.responsys.net/rest/api/v1.3/auth/token",
+  "RESPONSYS_USERNAME": "test",
+  "RESPONSYS_PASSWORD": "test"
+}

@@ -6,11 +6,6 @@ import { RefreshRequest } from '../auth/RefreshRequest';
 import { request } from 'https';
 import { AuthenticationRequest } from './AuthenticationRequest';
 
-/** 
- * TODO 
- * Move hardcoded path to configuration.
- */
-const URL = 'https://login5.responsys.net/rest/api/v1.3/auth/token';
 export class SecureClientInterceptor {
 
   private interceptor;
@@ -34,7 +29,7 @@ export class SecureClientInterceptor {
           const request = response.request;
           
           if (entity.errorCode === 'TOKEN_EXPIRED') {
-            const result = await this.authentication.signin(new AuthenticationRequest(URL));
+            const result = await this.authentication.signin(new AuthenticationRequest());
             request.headers.Authorization = this.authCache.getToken();
             return meta.client(request);
 

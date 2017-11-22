@@ -1,15 +1,17 @@
 import * as queryString from 'querystring';
 import { Request } from '../commons/Request';
+import { AuthConfig } from './AuthConfig';
 
 const DEFAULT_TYPE = 'password';
 
 export class AuthenticationRequest extends Request {
 
-  constructor(endpoint: string) {
+  constructor() {
+    const endpoint = AuthConfig.endpoint;
     
     const body = {
-      user_name: process.env.RESPONSYS_USERNAME,
-      password: process.env.RESPONSYS_PASSWORD,
+      user_name: AuthConfig.username,
+      password: AuthConfig.password,
       auth_type: DEFAULT_TYPE
     };
 

@@ -9,18 +9,14 @@ import { TriggerEmailMessageRequest } from '../../send/TriggerEmailMessageReques
 import { Recipient } from '../../send/Recipient';
 import * as queryString from 'querystring';
 import { RecipientData } from '../../send/RecipientData';
-
-const URL = 'https://login5.responsys.net/rest/api/v1.3/auth/token';
-const CASSETTE_PATH = `${__dirname}/cassettes/responsysAuth.json`;
-const CAMPAIGN = '[TEST]_Masivo_Cyber_Nov17_test';
+import { AuthConfig } from '../AuthConfig';
 
 /**
  * In order to re-generate the cassette, just delete the
  * @constant CASSETTE_PATH file and set real username and passwords.
  */
-const PASSWORD = 'test';
-process.env.RESPONSYS_USERNAME = 'test';
-process.env.RESPONSYS_PASSWORD = PASSWORD;
+const CASSETTE_PATH = `${__dirname}/cassettes/responsysAuth.json`;
+const CAMPAIGN = '[TEST]_Masivo_Cyber_Nov17_test';
 
 const WRONG_PASSWORD = 'wrong_password';
 
@@ -71,7 +67,7 @@ describe('Authentication', () => {
 
   it('should authenticate a user and return token and endpoint', (done) => {
     const auth = new Authentication();
-    const authRequest = new AuthenticationRequest(URL);
+    const authRequest = new AuthenticationRequest();
 
     auth.signin(authRequest).then((result) => {
       expect(result.status.code).to.equal(200);
@@ -89,10 +85,10 @@ describe('Authentication', () => {
   });
 
   it('should through an error with incorrect credentials', (done) => {
-    process.env.RESPONSYS_PASSWORD = WRONG_PASSWORD;
+    AuthConfig.password = WRONG_PASSWORD;
     
     const auth = new Authentication();
-    const authRequest = new AuthenticationRequest(URL);
+    const authRequest = new AuthenticationRequest();
 
     auth.signin(authRequest).then((result) => {
       expect(result.status.code).to.equal(400);
@@ -101,7 +97,7 @@ describe('Authentication', () => {
 
       expect(errorResult.errorCode).to.equal(ERROR_WRONG_PASSWORD);
 
-      process.env.RESPONSYS_PASSWORD = PASSWORD;
+      AuthConfig.init();
       done();
     }).catch((error) => {
       console.log(error);
@@ -110,7 +106,7 @@ describe('Authentication', () => {
 
   it('should take a valid token and refresh it', (done) => {
     const auth = new Authentication();
-    const authRequest = new AuthenticationRequest(URL);
+    const authRequest = new AuthenticationRequest();
 
     auth.signin(authRequest).then((result) => {
       const signinResult = JSON.parse(result.entity);
@@ -134,7 +130,7 @@ describe('Authentication', () => {
 
   it('should not invalidate the previous token after refreshing', (done) => {
     const auth = new Authentication();
-    const authRequest = new AuthenticationRequest(URL);
+    const authRequest = new AuthenticationRequest();
 
     auth.signin(authRequest).then((result) => {
       const signinResult = JSON.parse(result.entity);
