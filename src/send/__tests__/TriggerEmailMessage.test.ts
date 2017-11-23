@@ -7,7 +7,7 @@ import { RecipientData } from '../RecipientData';
 import { Authentication } from '../../auth/Authentication';
 import { AuthenticationRequest } from '../../auth/AuthenticationRequest';
 import { AuthCache } from '../../auth/AuthCache';
-import { HttpRecorder } from '../../commons/HttpRecorder';
+import { HttpRecorder } from 'nock-utils';
 
 const CAMPAIGN = '[TEST]_Masivo_Cyber_Nov17_test';
 const URL = 'https://login5.responsys.net/rest/api/v1.3/auth/token';

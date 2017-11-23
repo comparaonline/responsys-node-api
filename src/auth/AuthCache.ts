@@ -18,15 +18,15 @@ export class AuthCache {
     datastore.setItemSync(KEY_ISSUED_AT, authResponse.issuedAt);
   }
 
-  getToken() {
+  getToken(): string {
     return datastore.getItemSync(KEY_TOKEN);
   }
 
-  getEndpoint() {
+  getEndpoint(): string {
     return datastore.getItemSync(KEY_ENDPOINT);
   }
 
-  getIssued() {
+  getIssued(): string {
     return datastore.getItemSync(KEY_ISSUED_AT);
   }
 
@@ -34,7 +34,7 @@ export class AuthCache {
     return this.getToken() != null;
   }
 
-  clear() {
+  clear(): void {
     datastore.clearSync();
   }
 

@@ -1,7 +1,6 @@
 import { expect } from 'chai';
 import { Authentication } from '../Authentication';
 import { AuthenticationRequest } from '../AuthenticationRequest';
-import { HttpRecorder } from '../../commons/HttpRecorder';
 import { RefreshRequest } from '../RefreshRequest';
 import { AuthCache } from '../AuthCache';
 import { TriggerEmailMessage } from '../../send/TriggerEmailMessage';
@@ -10,6 +9,7 @@ import { Recipient } from '../../send/Recipient';
 import * as queryString from 'querystring';
 import { RecipientData } from '../../send/RecipientData';
 import { AuthConfig } from '../AuthConfig';
+import { HttpRecorder } from 'nock-utils';
 
 /**
  * In order to re-generate the cassette, just delete the
