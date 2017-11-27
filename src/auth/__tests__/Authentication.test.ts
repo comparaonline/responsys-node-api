@@ -128,30 +128,25 @@ describe('Authentication', () => {
     });
   });
 
-  it('should not invalidate the previous token after refreshing', (done) => {
+  it('should not invalidate the previous token after refreshing', async () => {
     const auth = new Authentication();
     const authRequest = new AuthenticationRequest();
 
-    auth.signin(authRequest).then((result) => {
-      const signinResult = JSON.parse(result.entity);
-      const originalToken = signinResult.authToken;
+    const authResult = await auth.signin(authRequest);
+    const signinResult = JSON.parse(authResult.entity);
+    const originalToken = signinResult.authToken;
 
-      const firstRefresh = new RefreshRequest(originalToken);
+    const firstRefresh = new RefreshRequest(originalToken);
 
-      auth.refresh(firstRefresh).then((result) => {
-        const secondRefresh = new RefreshRequest(originalToken);
+    const firstRefreshResult = await auth.refresh(firstRefresh);
+    const secondRefresh = new RefreshRequest(originalToken);
 
-        auth.refresh(secondRefresh).then((result) => {
-          const secondRefreshResult = JSON.parse(result.entity);
+    const secondRefreshResult = await auth.refresh(secondRefresh);
+    const secondRefreshEntity = JSON.parse(secondRefreshResult.entity);
 
-          expect(secondRefreshResult.authToken).to.be.a('string');
-          expect(secondRefreshResult.issuedAt).to.be.a('number');
-          expect(secondRefreshResult.endPoint).to.be.a('string');
-
-          done();
-        });
-      });
-    });
+    expect(secondRefreshEntity.authToken).to.be.a('string');
+    expect(secondRefreshEntity.issuedAt).to.be.a('number');
+    expect(secondRefreshEntity.endPoint).to.be.a('string');
   });
 });
 

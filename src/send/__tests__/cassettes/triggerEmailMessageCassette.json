@@ -27,13 +27,13 @@
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-f822125a040a0d9f05e759d5 0",
+      "Id-5d88185a1388a12cd754f7b8 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:00 GMT",
+      "Fri, 24 Nov 2017 21:00:13 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -47,8 +47,8 @@
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "Ef3ytY8q0wKLPf6KLvTIlI8rOCiMfjnjdW5W3HpWdQdXWya3y0",
-      "issuedAt": 1511138072187,
+      "authToken": "E4j6mU98tZ8dXvApuop5sw0lkUJ8myzi1Pg9j6Rsg0cj0NdGuM",
+      "issuedAt": 1511557245132,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -59,9 +59,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1823125a64fb3ff10306a4aa 0",
+      "Id-7d88185afd9009524197fac0 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:32 GMT",
+      "Fri, 24 Nov 2017 21:00:45 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -96,13 +96,13 @@
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1a23125aed0e2f08666b7c90 0",
+      "Id-7d88185a2e918e48a981920c 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:34 GMT",
+      "Fri, 24 Nov 2017 21:00:46 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -116,8 +116,8 @@
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "E30oB3Jy24DV85l2ezzgI5H2qmy8_tb4SE8DrWLm0zR9e-erRg",
-      "issuedAt": 1511138075217,
+      "authToken": "E0z-qvZXtIMQudygG56L165XFUaMggSkH1x2hN1Zb9uvhB4Sqg",
+      "issuedAt": 1511557249112,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -128,9 +128,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1b23125a100fe922c8169786 0",
+      "Id-8188185ae98861181a201802 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:35 GMT",
+      "Fri, 24 Nov 2017 21:00:49 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -158,9 +158,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1c23125a2a0fb05bb8be2b3a 0",
+      "Id-8188185ae6889a305a585a6e 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:36 GMT",
+      "Fri, 24 Nov 2017 21:00:49 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -174,8 +174,8 @@
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "E7lhHmsw-x5ymVxBR7I5LV2SsSgWmSS1zZ2ZDflQ7a_e0E8AUg",
-      "issuedAt": 1511138077726,
+      "authToken": "EdcDMO6f56G05w9MHmzCiEniCEshpERNLpbResrgYUKYOpEt9w",
+      "issuedAt": 1511557250631,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -186,9 +186,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1d23125a1efc7ef97b22f324 0",
+      "Id-8288185a3f92a1deaa42a985 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:37 GMT",
+      "Fri, 24 Nov 2017 21:00:50 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -202,8 +202,8 @@
     "body": "auth_type=token",
     "status": 200,
     "response": {
-      "authToken": "EddMv2xQTAnH0IPWcez2chzCzmU3Xz44DV_TsQq_reJQZm3QTg",
-      "issuedAt": 1511138078876,
+      "authToken": "E9v0T0tRAyH3RwaTQoEcZhDsT8cxwriGVn8HUYVYS9wPFf_J6g",
+      "issuedAt": 1511557251424,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -214,9 +214,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1e23125a39fc12cfddbad981 0",
+      "Id-8388185a8592fb9ebfdc96c9 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:38 GMT",
+      "Fri, 24 Nov 2017 21:00:51 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -230,21 +230,21 @@
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "EcNETVfUd_IALGChMqUeIqy11iy4RMYUhnsmr25N69M3VDqs6w",
-      "issuedAt": 1511138079948,
+      "authToken": "EaM47SCm-9yCtxU79x0VsRgCokPkzMlmzb8lj1RMnkQywHZdPg",
+      "issuedAt": 1511557252341,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1f23125a7bfc126feadbf3bf 0",
+      "Id-8488185abf897820c481b73e 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:39 GMT",
+      "Fri, 24 Nov 2017 21:00:52 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -258,8 +258,8 @@
     "body": "auth_type=token",
     "status": 200,
     "response": {
-      "authToken": "E42GUi08n3O6Fh6ZJQD8oy2-Rp8TVcMz7eAC6LUKpoZ8mBUt0M",
-      "issuedAt": 1511138080968,
+      "authToken": "E4lPjwd3G14w3HoFpL2fBzj85o7KEVrV6B02AEmVy-RhNg-d_0",
+      "issuedAt": 1511557253401,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -270,9 +270,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-2023125aac0fb31b73287a1d 0",
+      "Id-8588185a238a8606db7e9d79 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:40 GMT",
+      "Fri, 24 Nov 2017 21:00:53 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -286,41 +286,25 @@
     "body": "auth_type=token",
     "status": 200,
     "response": {
-      "authToken": "EbMlJcCVuBFeQa_L_NVHZ-oEX4zx1lDpo5efbSlmFQdornIQeg",
-      "issuedAt": 1511138083048,
+      "authToken": "Ebp4jbMzauG8QnKkVMS3EVrsvBwSXM3Y1b9005VhiNfcNtzXZ0",
+      "issuedAt": 1511557254150,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-2323125ab70f41a6030e55ee 0",
+      "Id-8688185a65934c420a0a9678 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:43 GMT",
+      "Fri, 24 Nov 2017 21:00:54 GMT",
       "Server",
       "Apache",
       "Content-Type",
       "application/json"
-    ]
-  },
-  {
-    "scope": "https://api.github.com:443",
-    "method": "GET",
-    "path": "/emojis",
-    "body": "",
-    "status": 403,
-    "response": "Request forbidden by administrative rules. Please make sure your request has a User-Agent header (http://developer.github.com/v3/#user-agent-required). Check https://developer.github.com for other possible causes.\n",
-    "rawHeaders": [
-      "Cache-Control",
-      "no-cache",
-      "Connection",
-      "close",
-      "Content-Type",
-      "text/html"
     ]
   },
   {
@@ -335,7 +319,104 @@
             "emailAddress": "lpavetti@comparaonline.com",
             "emailFormat": "HTML_FORMAT",
             "mobileNumber": "951349394"
-          }
+          },
+          "optionalData": [
+            {
+              "name": "data_1",
+              "value": "value_1"
+            },
+            {
+              "name": "data_2",
+              "value": "value_2"
+            },
+            {
+              "name": "data_3",
+              "value": "value_3"
+            }
+          ]
+        }
+      ]
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Authentication token expired",
+      "errorCode": "TOKEN_EXPIRED",
+      "detail": "Token expired",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-8788185a7d8a3a2b38f2b426 0",
+      "Date",
+      "Fri, 24 Nov 2017 21:00:55 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E51KTYnSiwAsZARskoUvamrctm1YVGJZKoEqOFRHqgl5EafYIw",
+      "issuedAt": 1511557286175,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-a688185af4923abcf88c2a56 0",
+      "Date",
+      "Fri, 24 Nov 2017 21:01:26 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "body": {
+      "recipientData": [
+        {
+          "recipient": {
+            "customerId": "5634169",
+            "emailAddress": "lpavetti@comparaonline.com",
+            "emailFormat": "HTML_FORMAT",
+            "mobileNumber": "951349394"
+          },
+          "optionalData": [
+            {
+              "name": "data_1",
+              "value": "value_1"
+            },
+            {
+              "name": "data_2",
+              "value": "value_2"
+            },
+            {
+              "name": "data_3",
+              "value": "value_3"
+            }
+          ]
         }
       ]
     },
@@ -351,13 +432,13 @@
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-2623125a12fd456f7fab2545 0",
+      "Id-a688185a2793559d6e0993c9 0",
       "Date",
-      "Mon, 20 Nov 2017 00:34:46 GMT",
+      "Fri, 24 Nov 2017 21:01:26 GMT",
       "Server",
       "Apache",
       "Content-Type",

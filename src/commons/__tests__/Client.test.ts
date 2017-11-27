@@ -4,6 +4,7 @@ import { Client } from '../Client';
 import { Request } from '../Request';
 import { expect } from 'chai';
 import { error } from 'util';
+import * as sinon from 'sinon';
 
 const TEST_URL = 'http://127.0.0.1:3000';
 const TEST_RESULT = 'result_ok';
@@ -48,22 +49,28 @@ describe('Client', () => {
     server.close();
   });
 
-  it('should stop retrying requests and timeout after 3 seconds', async () => {
-    server = startServer(10);
-    
-    try {
-      const result = await client.call(request);
-    } catch (error) {
-      expect(error.error).to.equal('timeout');
-    }
-  });
-
-  it('should retry requests when failed', async () => {
+  it('should retry requests when failed', (done) => {
     server = startServer(2);
-    const result = await client.call(request);
     
-    expect(result.status.code).to.equal(200);
-    expect(result.entity).to.equal(TEST_RESULT);
+    client.call(request).then((result) => {
+      expect(result.status.code).to.equal(200);
+      expect(result.entity).to.equal(TEST_RESULT);
+      done();
+    });
   });
 
+  it('should stop retrying requests after timeout', (done) => {
+    server = startServer(10);
+    const clock = sinon.useFakeTimers();
+
+    client.call(request).then(
+      (result) => { }, 
+      (error) => {
+        expect(error.error).to.equal('timeout');
+        done();
+      });
+
+    clock.tick(client.timeoutOptions.timeout);
+    clock.restore();
+  });
 });

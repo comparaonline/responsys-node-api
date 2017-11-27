@@ -20,7 +20,7 @@ export class AuthConfig {
 
     if (!this.password || !this.username || !this.endpoint) {
       throw new Error(ERROR + 
-        `Endpoint: ${this.endpoint} Username: ${this.endpoint} No Password: ${!this.endpoint}`);
+        `Endpoint: ${this.endpoint} Username: ${this.username} No Password: ${!this.password}`);
     }
   }
 }
