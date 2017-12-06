@@ -1,9 +1,6 @@
 import * as interceptor from 'rest/interceptor';
-import * as rest from 'rest';
 import { AuthCache } from '../auth/AuthCache';
 import { Authentication } from '../auth/Authentication';
-import { RefreshRequest } from '../auth/RefreshRequest';
-import { request } from 'https';
 import { AuthenticationRequest } from './AuthenticationRequest';
 
 export class SecureClientInterceptor {
@@ -14,30 +11,26 @@ export class SecureClientInterceptor {
 
   get() {
     return interceptor({
-      init: (config) => {
-        return config;
-      },
-      request: (request, config, meta) => {
+      request: async (request, config, meta) => {
+        if (!this.authCache.isLoaded()) {
+          const result = await this.authentication.signin(new AuthenticationRequest());
+          request.headers.Authorization = this.authCache.getToken();
+          
+          return request;
+        }
+
         return request;
       },
-      response: (response, config, meta) => {
-        return response;
-      },
       success: async (response, config, meta) => {
-        if (response.status.code === 401) {
-          const entity = JSON.parse(response.entity);
+        const status = response.status || { code: 408 };
+        if (status.code === 401 || status.code === 403) {
           const request = response.request;
-          
-          if (entity.errorCode === 'TOKEN_EXPIRED') {
-            const result = await this.authentication.signin(new AuthenticationRequest());
-            request.headers.Authorization = this.authCache.getToken();
-            return meta.client(request);
+          const result = await this.authentication.signin(new AuthenticationRequest());
+          request.headers.Authorization = this.authCache.getToken();
 
-          } else if (entity.errorCode === 'INVALID_TOKEN') {
-            this.authCache.clear();
-            return meta.client(request);
-          }
-        } 
+          return meta.client(request);
+        }
+
         return response;
       },
       error: (response, config, meta) => {
@@ -45,5 +38,4 @@ export class SecureClientInterceptor {
       }
     });
   }
-
 }

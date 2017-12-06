@@ -8,7 +8,8 @@
   "bugs": {
     "url": "https://github.com/comparaonline/responsys-node-api/issues"
   },
-  "main": "index.js",
+  "main": "build/index.ts",
+  "types": "build/index.d.ts",
   "scripts": {
     "compile": "tsc --outDir ./build",
     "test": "NODE_ENV=test mocha -r ts-node/register src/**/*.test.ts --timeout=60000"
@@ -24,7 +25,6 @@
     "@types/chai": "^4.0.4",
     "@types/config": "^0.0.33",
     "@types/express": "^4.0.39",
-    "@types/jest": "^21.1.5",
     "@types/jsonfile": "^4.0.1",
     "@types/mocha": "^2.2.44",
     "@types/nock": "^8.2.1",
@@ -38,7 +38,6 @@
     "nock-utils": "^0.1.1",
     "querystring": "^0.2.0",
     "sinon": "^4.1.2",
-    "ts-jest": "^21.2.1",
     "ts-node": "^3.3.0",
     "tslint": "^5.8.0",
     "tslint-config-airbnb": "^5.3.0",

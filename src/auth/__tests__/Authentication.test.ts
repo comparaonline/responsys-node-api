@@ -26,18 +26,19 @@ const recorder = new HttpRecorder(CASSETTE_PATH);
 
 describe('Authentication', () => {
 
+  const authCache = new AuthCache();
+
   before(() => {
+    authCache.clear();
     recorder.start();
   });
 
   after(() => {
+    authCache.clear();
     recorder.stop();
   });
 
   it('should automatically refresh an expired token', (done) => {
-    const authCache = new AuthCache();
-    authCache.clear();
-
     authCache.set({
       authToken: 'E0ixlPgbClnEoWQbkWL7o0p20i3OosJN0Kkrkrl1ZJVd8tFLYw',
       issuedAt: 1511008009879,
@@ -53,11 +54,11 @@ describe('Authentication', () => {
     const campaignUnescaped = queryString.escape(CAMPAIGN);
 
     const recipients = new Set<RecipientData>();
-
     recipients.add(new RecipientData(recipient1));
 
-    const triggerEmailClient = new TriggerEmailMessage();
     const triggerEmailRequest = new TriggerEmailMessageRequest(recipients, campaignUnescaped);
+    
+    const triggerEmailClient = new TriggerEmailMessage();
 
     triggerEmailClient.send(triggerEmailRequest).then((result) => {
       expect(result.status.code).to.equal(200);
@@ -79,8 +80,6 @@ describe('Authentication', () => {
       expect(entity.endPoint).to.be.a('string');
 
       done();
-    }).catch((error) => {
-      console.error(error);
     });
   });
 
@@ -99,8 +98,6 @@ describe('Authentication', () => {
 
       AuthConfig.init();
       done();
-    }).catch((error) => {
-      console.log(error);
     });
   });
 
@@ -120,11 +117,7 @@ describe('Authentication', () => {
         expect(refreshResult.endPoint).to.be.a('string');
 
         done();
-      }).catch((error) => {
-        console.error(error);
       });
-    }).catch((error) => {
-      console.error(error);
     });
   });
 

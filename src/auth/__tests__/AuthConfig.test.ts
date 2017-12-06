@@ -13,6 +13,8 @@ describe('AuthConfig', () => {
   });
 
   it('should contain username, password and endpoint attributes', () => {
+    AuthConfig.init();
+    
     expect(AuthConfig).to.have.property('username');
     expect(AuthConfig).to.have.property('password');
     expect(AuthConfig).to.have.property('endpoint');

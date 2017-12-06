@@ -24,5 +24,3 @@ export class AuthConfig {
     }
   }
 }
-
-AuthConfig.init();

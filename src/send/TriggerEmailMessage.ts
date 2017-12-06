@@ -5,6 +5,6 @@ import { Client } from '../commons/Client';
 export class TriggerEmailMessage extends Client {
 
   send(emailMessageRequest: TriggerEmailMessageRequest): rest.ResponsePromise {
-    return this.call(emailMessageRequest);
+    return super.call(emailMessageRequest);
   }
 }

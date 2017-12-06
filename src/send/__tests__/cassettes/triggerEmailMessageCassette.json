@@ -1,123 +1,13 @@
 [
   {
-    "scope": "https://api5-009.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
-    "body": {
-      "recipientData": [
-        {
-          "recipient": {
-            "customerId": "5634169",
-            "emailAddress": "lpavetti@comparaonline.com",
-            "emailFormat": "HTML_FORMAT",
-            "mobileNumber": "951349394"
-          }
-        }
-      ]
-    },
-    "status": 401,
-    "response": {
-      "type": "",
-      "title": "Authentication token expired",
-      "errorCode": "TOKEN_EXPIRED",
-      "detail": "Token expired",
-      "errorDetails": []
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-5d88185a1388a12cd754f7b8 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:13 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
     "scope": "https://login5.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "E4j6mU98tZ8dXvApuop5sw0lkUJ8myzi1Pg9j6Rsg0cj0NdGuM",
-      "issuedAt": 1511557245132,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-7d88185afd9009524197fac0 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:45 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://api5-009.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
-    "body": {
-      "recipientData": [
-        {
-          "recipient": {
-            "customerId": "5634169",
-            "emailAddress": "lpavetti@comparaonline.com",
-            "emailFormat": "HTML_FORMAT",
-            "mobileNumber": "951349394"
-          }
-        }
-      ]
-    },
-    "status": 200,
-    "response": [
-      {
-        "errorMessage": null,
-        "recipientId": 274187665,
-        "success": true
-      }
-    ],
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-7d88185a2e918e48a981920c 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:46 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "E0z-qvZXtIMQudygG56L165XFUaMggSkH1x2hN1Zb9uvhB4Sqg",
-      "issuedAt": 1511557249112,
+      "authToken": "E1qvmu-UsCUjhGcbesZAaUf7ON-8hiqbCgBRHTmYABzCBFkqBw",
+      "issuedAt": 1512480696771,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -128,262 +18,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-8188185ae98861181a201802 0",
+      "Id-b89f265adc0263605bbafb04 0",
       "Date",
-      "Fri, 24 Nov 2017 21:00:49 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=wrong_password&auth_type=password",
-    "status": 400,
-    "response": {
-      "type": "",
-      "title": "Invalid username or password",
-      "errorCode": "INVALID_USER_NAME_PASSWORD",
-      "detail": "Login failed",
-      "errorDetails": []
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-8188185ae6889a305a585a6e 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:49 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "EdcDMO6f56G05w9MHmzCiEniCEshpERNLpbResrgYUKYOpEt9w",
-      "issuedAt": 1511557250631,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-8288185a3f92a1deaa42a985 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:50 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "auth_type=token",
-    "status": 200,
-    "response": {
-      "authToken": "E9v0T0tRAyH3RwaTQoEcZhDsT8cxwriGVn8HUYVYS9wPFf_J6g",
-      "issuedAt": 1511557251424,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-8388185a8592fb9ebfdc96c9 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:51 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "EaM47SCm-9yCtxU79x0VsRgCokPkzMlmzb8lj1RMnkQywHZdPg",
-      "issuedAt": 1511557252341,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-8488185abf897820c481b73e 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:52 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "auth_type=token",
-    "status": 200,
-    "response": {
-      "authToken": "E4lPjwd3G14w3HoFpL2fBzj85o7KEVrV6B02AEmVy-RhNg-d_0",
-      "issuedAt": 1511557253401,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-8588185a238a8606db7e9d79 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:53 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "auth_type=token",
-    "status": 200,
-    "response": {
-      "authToken": "Ebp4jbMzauG8QnKkVMS3EVrsvBwSXM3Y1b9005VhiNfcNtzXZ0",
-      "issuedAt": 1511557254150,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-8688185a65934c420a0a9678 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:54 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json"
-    ]
-  },
-  {
-    "scope": "https://api5-009.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
-    "body": {
-      "recipientData": [
-        {
-          "recipient": {
-            "customerId": "5634169",
-            "emailAddress": "lpavetti@comparaonline.com",
-            "emailFormat": "HTML_FORMAT",
-            "mobileNumber": "951349394"
-          },
-          "optionalData": [
-            {
-              "name": "data_1",
-              "value": "value_1"
-            },
-            {
-              "name": "data_2",
-              "value": "value_2"
-            },
-            {
-              "name": "data_3",
-              "value": "value_3"
-            }
-          ]
-        }
-      ]
-    },
-    "status": 401,
-    "response": {
-      "type": "",
-      "title": "Authentication token expired",
-      "errorCode": "TOKEN_EXPIRED",
-      "detail": "Token expired",
-      "errorDetails": []
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-8788185a7d8a3a2b38f2b426 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:00:55 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "E51KTYnSiwAsZARskoUvamrctm1YVGJZKoEqOFRHqgl5EafYIw",
-      "issuedAt": 1511557286175,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-a688185af4923abcf88c2a56 0",
-      "Date",
-      "Fri, 24 Nov 2017 21:01:26 GMT",
+      "Tue, 05 Dec 2017 13:31:36 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -436,9 +73,219 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-a688185a2793559d6e0993c9 0",
+      "Id-b99f265ac7f9ec3dca190f03 0",
       "Date",
-      "Fri, 24 Nov 2017 21:01:26 GMT",
+      "Tue, 05 Dec 2017 13:31:37 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "body": {
+      "recipientData": [
+        {
+          "recipient": {
+            "emailAddress": "lpavettii@comparaonline.com"
+          }
+        }
+      ]
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Not a valid token",
+      "errorCode": "INVALID_TOKEN",
+      "detail": "Not a valid authentication token",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-ba9f265a2528405ce08acc90 0",
+      "Date",
+      "Tue, 05 Dec 2017 13:31:38 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E7jVfIlQXpmh8kTD_NgwHyetvG3eGKpsRkYDNzUo2ARjsTLbug",
+      "issuedAt": 1512480729171,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-d99f265a5909c314099292a2 0",
+      "Date",
+      "Tue, 05 Dec 2017 13:32:09 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "body": {
+      "recipientData": [
+        {
+          "recipient": {
+            "emailAddress": "lpavettii@comparaonline.com"
+          }
+        }
+      ]
+    },
+    "status": 200,
+    "response": [
+      {
+        "errorMessage": "NO_RECIPIENT_FOUND: Recipient Not Found",
+        "recipientId": -1,
+        "success": false
+      }
+    ],
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-d99f265a5200391c430653df 0",
+      "Date",
+      "Tue, 05 Dec 2017 13:32:09 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "body": {
+      "recipientData": [
+        {
+          "recipient": {
+            "customerId": "5634169",
+            "emailAddress": "hola@comparaonline.com"
+          }
+        }
+      ]
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Not a valid token",
+      "errorCode": "INVALID_TOKEN",
+      "detail": "Not a valid authentication token",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-da9f265ac52ee0bbae797197 0",
+      "Date",
+      "Tue, 05 Dec 2017 13:32:10 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://login5.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "Eb68vaStCHMGZCH_Clgn_Ky81wIHWSJCBmFPwLmmKSU3hb0qO0",
+      "issuedAt": 1512480761475,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-f99f265a3e060b657215a46d 0",
+      "Date",
+      "Tue, 05 Dec 2017 13:32:41 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "body": {
+      "recipientData": [
+        {
+          "recipient": {
+            "customerId": "5634169",
+            "emailAddress": "hola@comparaonline.com"
+          }
+        }
+      ]
+    },
+    "status": 200,
+    "response": [
+      {
+        "errorMessage": "RECIPIENT_STATUS_UNDELIVERABLE: Recipient deliverability status is undeliverable",
+        "recipientId": -1,
+        "success": false
+      }
+    ],
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-fa9f265a5e066f148881b5cf 0",
+      "Date",
+      "Tue, 05 Dec 2017 13:32:42 GMT",
       "Server",
       "Apache",
       "Content-Type",

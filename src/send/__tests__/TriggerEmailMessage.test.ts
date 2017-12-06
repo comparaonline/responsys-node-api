@@ -18,11 +18,16 @@ const recorder = new HttpRecorder(CASSETTE_PATH);
 
 describe('TriggerEmailMessage', () => {
 
+  const campaign = queryString.escape(CAMPAIGN);
+  const authCache = new AuthCache();
+
   before(() => {
+    authCache.clear();
     recorder.start();
   });
 
   after(() => {
+    authCache.clear();
     recorder.stop();
   });
 
@@ -60,7 +65,56 @@ describe('TriggerEmailMessage', () => {
     resultArray.forEach((element) => {
       expect(element.errorMessage).to.be.null;
       expect(element.success).to.be.true;
-      expect(element.recipientId).to.be.a('number');
+      expect(element.recipientId).to.be.gt(0);
     });
+  });
+
+  it('should return NO_RECIPIENT_FOUND error for a non existing email address', async () => {
+    const recipients = new Set<RecipientData>();
+  
+    const recipient1 = new Recipient();
+    recipient1.emailAddress = 'lpavettii@comparaonline.com';
+
+    const data = new RecipientData(recipient1);
+    recipients.add(data);
+
+    const trigger = new TriggerEmailMessage();
+    const message = new TriggerEmailMessageRequest(recipients, campaign);
+  
+    const result = await trigger.send(message);
+    const results = JSON.parse(result.entity);
+
+    expect(results).to.have.lengthOf(1);
+
+    const error = results[0];
+    expect(error.success).to.be.false;
+    expect(error.recipientId).to.equal(-1);
+    expect(error.errorMessage).to.contain('NO_RECIPIENT_FOUND');
+    
+  });
+
+  it('should return RECIPIENT_STATUS_UNDELIVERABLE error for wrong email address', async () => {
+    const recipients = new Set<RecipientData>();
+  
+    const recipient = new Recipient();
+    recipient.customerId = '5634169';
+    recipient.emailAddress = 'hola@comparaonline.com';
+
+    const data = new RecipientData(recipient);
+    recipients.add(data);
+
+    const trigger = new TriggerEmailMessage();
+    const message = new TriggerEmailMessageRequest(recipients, campaign);
+
+    const result = await trigger.send(message);
+    const results = JSON.parse(result.entity);
+
+    expect(results).to.have.lengthOf(1);
+
+    const error = results[0];
+    expect(error.success).to.be.false;
+    expect(error.recipientId).to.equal(-1);
+    expect(error.errorMessage).to.contain('RECIPIENT_STATUS_UNDELIVERABLE');
+    
   });
 });
