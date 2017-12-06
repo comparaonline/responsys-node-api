@@ -30,30 +30,32 @@ describe('PathInterceptor', () => {
     authCache.set(AUTH_DATA);
     expect(authCache.getEndpoint()).to.equal(AUTH_DATA.endPoint);
     
-    client(PATH).then(
-      (result) => { },
-      (error) => {
-        expect(error.request.path).to.equal(COMPLETE_PATH);
-        done();
-      });
+    client(PATH).then(() => {
+      expect.fail('Should fail because no server is up');
+    }).catch((error) => {
+      expect(error.request.path).to.equal(COMPLETE_PATH);
+      done();
+    });
   });
 
   it('should leave unchanged when endpoint already contained in path', (done) => {
     authCache.set(AUTH_DATA);
     expect(authCache.getEndpoint()).to.equal(AUTH_DATA.endPoint);
     
-    client(COMPLETE_PATH).then(
-      (result) => { },
-      (error) => {
-        expect(error.request.path).to.equal(COMPLETE_PATH);
-        done();
-      });
+    client(COMPLETE_PATH).then(() => {
+      expect.fail('Should fail because no server is up');
+    }).catch((error) => {
+      expect(error.request.path).to.equal(COMPLETE_PATH);
+      done();
+    });
   });
 
   it('should through an error if authentication not loaded.', (done) => {
     expect(authCache.isLoaded()).to.be.false;
 
-    client(PATH).then(null, (error) => {
+    client(PATH).then(() => {
+      expect.fail('Should fail because no server is up');
+    }).catch((error) => {
       expect(error.error).to.equal('Authentication Missing: Cannot add endpoint to path.');
       done();
     });
