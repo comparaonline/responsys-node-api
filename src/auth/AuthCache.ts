@@ -1,10 +1,10 @@
 import * as datastore from 'node-persist';
-
-const DEFAULT_STORE = 'ResponsysAuthCache.db';
-
-const KEY_TOKEN = 'last_token';
-const KEY_ENDPOINT = 'last_endpoint';
-const KEY_ISSUED_AT = 'last_issued_at';
+import {
+  KEY_ENDPOINT,
+  KEY_TOKEN,
+  KEY_ISSUED_AT,
+  DEFAULT_STORE
+} from '../Constants';
 
 export class AuthCache {
 

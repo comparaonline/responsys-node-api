@@ -1,5 +1,15 @@
 {
-  "RESPONSYS_AUTH_ENDPOINT": "https://login5.responsys.net/rest/api/v1.3/auth/token",
-  "RESPONSYS_USERNAME": "test",
-  "RESPONSYS_PASSWORD": "test"
+  "auth": {
+    "endPoint": "https://login5.responsys.net/rest/api/v1.3/auth/token",
+    "username": "test",
+    "password": "test",
+    "token": "E9U9ucpPPOeUF1CsNe-vyLmFCgnTPdMAEFOYJVRrekskeh-X7w"
+  },
+  "refresh": {
+    "authToken": "E9U9ucpPPOeUF1CsNe-vyLmFCgnTPdMAEFOYJVRrekskeh-X7w",
+    "issuedAt": 1524079766511,
+    "endPoint": "https://api5-009.responsys.net"
+  },
+  "campaign": "[TEST]_Masivo_Cyber_Nov17_test"
+
 }

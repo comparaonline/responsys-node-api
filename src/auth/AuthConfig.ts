@@ -1,6 +1,6 @@
 import * as config from 'config';
+import { ERROR } from '../Constants';
 
-const ERROR = 'Missing configuration parameters for Responsys connection. ';
 
 export class AuthConfig {
   static endpoint;
@@ -8,19 +8,33 @@ export class AuthConfig {
   static password;
 
   static init(endpoint?: string, username?: string, password?: string) {
-    if (process.env.NODE_ENV === 'test') {
-      this.endpoint = config.get('RESPONSYS_AUTH_ENDPOINT');
-      this.username = config.get('RESPONSYS_USERNAME');
-      this.password = config.get('RESPONSYS_PASSWORD');
-    } else {
-      this.endpoint = endpoint || process.env.RESPONSYS_AUTH_ENDPOINT;
-      this.username = username || process.env.RESPONSYS_USERNAME;
-      this.password = password || process.env.RESPONSYS_PASSWORD;
-    }
 
-    if (!this.password || !this.username || !this.endpoint) {
-      throw new Error(ERROR + 
+    this.setEndpoint(endpoint);
+    this.setPassword(password);
+    this.setUsername(username);
+
+    if (this.isDataValid()) {
+      throw new Error(ERROR +
         `Endpoint: ${this.endpoint} Username: ${this.username} No Password: ${!this.password}`);
     }
+  }
+
+  static setEndpoint(endpoint): void {
+    this.endpoint =
+      endpoint || config.get('auth.endPoint') || process.env.RESPONSYS_AUTH_ENDPOINT;
+  }
+
+  static setUsername(username): void {
+    this.username =
+      username || config.get('auth.username') || process.env.RESPONSYS_USERNAME;
+  }
+
+  static setPassword(password): void {
+    this.password =
+      password || config.get('auth.password') || process.env.RESPONSYS_PASSWORD;
+  }
+
+  static isDataValid() : boolean {
+    return (!this.password || !this.username || !this.endpoint);
   }
 }

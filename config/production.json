@@ -1,0 +1,14 @@
+{
+  "auth": {
+    "endPoint": "https://login5.responsys.net/rest/api/v1.3/auth/token",
+    "username": "production",
+    "password": "production"
+  },
+  "refresh": {
+    "authToken": "E9WpDeXSHY5cXKinEHSZUUqclZMbbOutxEBf1b23ieyRpEzltg",
+    "issuedAt": 1510880256844,
+    "endPoint": "https://api5-009.responsys.net"
+  },
+  "campaign": "[TEST]_Masivo_Cyber_Nov17_test"
+
+}
