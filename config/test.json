@@ -3,10 +3,10 @@
     "endPoint": "https://login5.responsys.net/rest/api/v1.3/auth/token",
     "username": "test",
     "password": "test",
-    "token": "E9U9ucpPPOeUF1CsNe-vyLmFCgnTPdMAEFOYJVRrekskeh-X7w"
+    "token": "qsdas32asdadasawadawdadaw"
   },
   "refresh": {
-    "authToken": "E9U9ucpPPOeUF1CsNe-vyLmFCgnTPdMAEFOYJVRrekskeh-X7w",
+    "authToken": "asdasdawdwdawdasxaw3342342adasd23",
     "issuedAt": 1524079766511,
     "endPoint": "https://api5-009.responsys.net"
   },

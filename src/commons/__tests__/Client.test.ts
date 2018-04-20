@@ -1,5 +1,6 @@
 import * as rest from 'rest';
 import * as express from 'express';
+import * as config from 'config';
 import { Client } from '../Client';
 import { Options } from './../Options';
 import { Request } from '../Request';
@@ -14,7 +15,7 @@ const TEST_HEADER = {
 };
 
 const RESPONSE = {
-  authToken: 'E9WpDeXSHY5cXKinEHSZUUqclZMbbOutxEBf1b23ieyRpEzltg',
+  authToken: config.get('refresh.authToken'),
   issuedAt: 1510880256844,
   endPoint: 'http://127.0.0.1:3000'
 };
