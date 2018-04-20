@@ -1,5 +1,5 @@
 {
-  "name": "responsys-node-api",
+  "name": "@comparaonline/responsys-node-api",
   "version": "1.0.0",
   "description": "Responsys REST API connector",
   "author": "Lisandro Pavetti",
@@ -12,6 +12,7 @@
   "types": "build/index.d.ts",
   "scripts": {
     "compile": "tsc --outDir ./build",
+    "prepublish": "yarn compile",
     "test": "NODE_ENV=test mocha -r ts-node/register src/**/*.test.ts --timeout=60000"
   },
   "repository": {
@@ -20,6 +21,9 @@
   },
   "keywords": [
     "responsys"
+  ],
+  "files": [
+    "build"
   ],
   "devDependencies": {
     "@types/chai": "^4.0.4",

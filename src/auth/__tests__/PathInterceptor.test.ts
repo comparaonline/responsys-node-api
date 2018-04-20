@@ -1,4 +1,5 @@
 import { expect } from 'chai';
+import * as config from 'config';
 import * as express from 'express';
 import { AuthCache } from '../AuthCache';
 import { PathInterceptor } from '../PathInterceptor';
@@ -8,12 +9,12 @@ describe('PathInterceptor', () => {
 
   const AUTH_DATA = {
     authToken: 'TEST',
-    issuedAt: 1510880256844,
+    issuedAt: config.get('refresh.issuedAt'),
     endPoint: 'http://test_endpoint'
   };
   const PATH = '/test_path';
   const COMPLETE_PATH = AUTH_DATA.endPoint + PATH;
-  
+
   const interceptor = new PathInterceptor().get();
   const client = rest.wrap(interceptor);
   const authCache = new AuthCache();
@@ -29,7 +30,7 @@ describe('PathInterceptor', () => {
   it('should add the path from AuthConfig when missing', (done) => {
     authCache.set(AUTH_DATA);
     expect(authCache.getEndpoint()).to.equal(AUTH_DATA.endPoint);
-    
+
     client(PATH).then(() => {
       expect.fail('Should fail because no server is up');
     }).catch((error) => {
@@ -41,7 +42,7 @@ describe('PathInterceptor', () => {
   it('should leave unchanged when endpoint already contained in path', (done) => {
     authCache.set(AUTH_DATA);
     expect(authCache.getEndpoint()).to.equal(AUTH_DATA.endPoint);
-    
+
     client(COMPLETE_PATH).then(() => {
       expect.fail('Should fail because no server is up');
     }).catch((error) => {

@@ -1,6 +1,10 @@
-const HTTP_METHOD = 'POST';
+import {
+  HTTP_METHOD_POST,
+  CONTENT_TYPE_URLENCODED
+} from '../Constants';
+
 const HEADERS = {
-  'content-type': 'application/x-www-form-urlencoded'
+  'content-type': CONTENT_TYPE_URLENCODED
 };
 
 export class Request {
@@ -10,7 +14,8 @@ export class Request {
   private headers: string;
   private path: string;
 
-  constructor(entity: string, path: string, headers: any = HEADERS, method: string = HTTP_METHOD) {
+  constructor(
+    entity: string, path: string, headers: any = HEADERS, method: string = HTTP_METHOD_POST) {
     this.entity = entity;
     this.path = path;
     this.method = method;

@@ -1,14 +1,14 @@
 import * as queryString from 'querystring';
+import * as config from 'config';
 import { Request } from '../commons/Request';
 import { AuthCache } from './AuthCache';
+import {
+  CONTENT_TYPE_URLENCODED,
+  TYPE_TOKEN
+} from '../Constants';
 
-const DEFAULT_TYPE = 'token';
 
-/** 
- * TODO 
- * Move hardcoded path to configuration.
- */
-const URL = 'https://login5.responsys.net/rest/api/v1.3/auth/token';
+const URL = config.get('auth.endPoint') as string;
 
 export class RefreshRequest extends Request {
 
@@ -17,14 +17,14 @@ export class RefreshRequest extends Request {
     const token = previousToken ? previousToken : authCache.getToken();
 
     const header = {
-      'content-type': 'application/x-www-form-urlencoded',
+      'content-type': CONTENT_TYPE_URLENCODED,
       Authorization: token
     };
 
     const entity = queryString.stringify({
-      auth_type: DEFAULT_TYPE
+      auth_type: TYPE_TOKEN
     });
-    
+
     super(entity, URL, header);
   }
 }

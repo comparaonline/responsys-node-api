@@ -1,6 +1,8 @@
 import * as rest from 'rest';
 import * as express from 'express';
-import { Client, Options } from '../Client';
+import * as config from 'config';
+import { Client } from '../Client';
+import { Options } from './../Options';
 import { Request } from '../Request';
 import { expect } from 'chai';
 import { error } from 'util';
@@ -13,7 +15,7 @@ const TEST_HEADER = {
 };
 
 const RESPONSE = {
-  authToken: 'E9WpDeXSHY5cXKinEHSZUUqclZMbbOutxEBf1b23ieyRpEzltg',
+  authToken: config.get('refresh.authToken'),
   issuedAt: 1510880256844,
   endPoint: 'http://127.0.0.1:3000'
 };
@@ -48,7 +50,7 @@ class TestClient extends Client {
 
 describe('Client', () => {
   const authCache = new AuthCache();
-  
+
   after(() => {
     authCache.clear();
   });
@@ -59,7 +61,7 @@ describe('Client', () => {
     errorCount = 0;
     request = new Request('', TEST_URL, TEST_HEADER, 'GET');
   });
-  
+
   afterEach((done) => {
     server.close(done);
   });
@@ -76,12 +78,12 @@ describe('Client', () => {
 
   it('should stop retrying requests after timeout', (done) => {
     server = startServer(10);
-    
+
     const requestOptions = new Options();
     requestOptions.timeoutOptions.timeout = 100;
 
     const client = new TestClient(requestOptions);
-    
+
     client.call(request).then(
       (result) => {
         expect(result.error).to.equal('timeout');

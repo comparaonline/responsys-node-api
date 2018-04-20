@@ -1,13 +1,12 @@
 {
   "auth": {
     "endPoint": "https://login5.responsys.net/rest/api/v1.3/auth/token",
-    "username": "test",
-    "password": "test",
-    "token": "qsdas32asdadasawadawdadaw"
+    "username": "production",
+    "password": "production"
   },
   "refresh": {
-    "authToken": "asdasdawdwdawdasxaw3342342adasd23",
-    "issuedAt": 1524079766511,
+    "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
+    "issuedAt": 1510880256844,
     "endPoint": "https://api5-009.responsys.net"
   },
   "campaign": "[TEST]_Masivo_Cyber_Nov17_test"

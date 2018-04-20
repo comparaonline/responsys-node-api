@@ -1,4 +1,5 @@
 import { expect } from 'chai';
+import * as config from 'config';
 import { Authentication } from '../Authentication';
 import { AuthenticationRequest } from '../AuthenticationRequest';
 import { RefreshRequest } from '../RefreshRequest';
@@ -16,7 +17,7 @@ import { HttpRecorder } from 'nock-utils';
  * @constant CASSETTE_PATH file and set real username and passwords.
  */
 const CASSETTE_PATH = `${__dirname}/cassettes/responsysAuth.json`;
-const CAMPAIGN = '[TEST]_Masivo_Cyber_Nov17_test';
+const CAMPAIGN = config.get('campaign') as string;
 
 const WRONG_PASSWORD = 'wrong_password';
 
@@ -40,24 +41,23 @@ describe('Authentication', () => {
 
   it('should automatically refresh an expired token', (done) => {
     authCache.set({
-      authToken: 'E0ixlPgbClnEoWQbkWL7o0p20i3OosJN0Kkrkrl1ZJVd8tFLYw',
-      issuedAt: 1511008009879,
-      endPoint: 'https://api5-009.responsys.net'
+      authToken: config.get('refresh.authToken'),
+      issuedAt: config.get('refresh.issuedAt'),
+      endPoint: config.get('refresh.endPoint')
     });
 
     const recipient1 = new Recipient();
-    recipient1.customerId = '5634169';
-    recipient1.emailAddress = 'lpavetti@comparaonline.com';
+    recipient1.emailAddress = 'dev@comparaonline.com';
     recipient1.emailFormat = 'HTML_FORMAT';
     recipient1.mobileNumber = '951349394';
-    
+
     const campaignUnescaped = queryString.escape(CAMPAIGN);
 
     const recipients = new Set<RecipientData>();
     recipients.add(new RecipientData(recipient1));
 
     const triggerEmailRequest = new TriggerEmailMessageRequest(recipients, campaignUnescaped);
-    
+
     const triggerEmailClient = new TriggerEmailMessage();
 
     triggerEmailClient.send(triggerEmailRequest).then((result) => {
@@ -85,7 +85,7 @@ describe('Authentication', () => {
 
   it('should through an error with incorrect credentials', (done) => {
     AuthConfig.password = WRONG_PASSWORD;
-    
+
     const auth = new Authentication();
     const authRequest = new AuthenticationRequest();
 

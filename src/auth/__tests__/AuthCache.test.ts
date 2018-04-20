@@ -1,10 +1,11 @@
 import { expect } from 'chai';
+import * as config from 'config';
 import { AuthCache } from '../AuthCache';
 
 const DEFAULT = {
-  authToken: 'E9WpDeXSHY5cXKinEHSZUUqclZMbbOutxEBf1b23ieyRpEzltg',
-  issuedAt: 1510880256844,
-  endPoint: 'https://api5-009.responsys.net'
+  authToken: config.get('refresh.authToken'),
+  issuedAt: config.get('refresh.issuedAt'),
+  endPoint: config.get('refresh.endPoint')
 };
 
 const TEST = {
@@ -21,7 +22,7 @@ describe('AuthCache', () => {
     authCache.clear();
     authCache.set(DEFAULT);
   });
-  
+
   it('should set an authentication response', () => {
     authCache.set(TEST);
 
