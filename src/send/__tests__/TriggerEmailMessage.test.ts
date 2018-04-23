@@ -39,14 +39,12 @@ describe('TriggerEmailMessage', () => {
     recipient1.emailFormat = 'HTML_FORMAT';
     recipient1.mobileNumber = '951349394';
 
-    const optionalData1 = new OptionalData('data_1', 'value_1');
-    const optionalData2 = new OptionalData('data_2', 'value_2');
-    const optionalData3 = new OptionalData('data_3', 'value_3');
+    const optionalData1 = new OptionalData('FIST_NAME', 'name');
+    const optionalData2 = new OptionalData('LAST_NAME', 'last name');
 
     const optionalData = new Set<OptionalData>();
     optionalData.add(optionalData1);
     optionalData.add(optionalData2);
-    optionalData.add(optionalData3);
 
     const data = new RecipientData(recipient1, optionalData);
     recipients.add(data);

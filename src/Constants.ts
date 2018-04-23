@@ -15,3 +15,25 @@ export const CLIENT_OPTIONS_TIME_OUT = 60000;
 export const CLIENT_OPTIONS_ERROR = { code: 404 };
 
 export const HTTP_METHOD_POST = 'POST';
+
+export const INVALID_REQUEST_PARAMETERS = 'Invalid request parameters';
+
+export const INVALID_PARAMETER = 'INVALID_PARAMETER';
+
+export const MERGER_RULE = {
+  htmlValue: 'H',
+  matchColumnName1: 'EMAIL_ADDRESS_',
+  matchColumnName2: null,
+  optoutValue: 'O',
+  insertOnNoMatch: true,
+  defaultPermissionStatus: 'OPTIN',
+  rejectRecordIfChannelEmpty: 'E',
+  optinValue: 'I',
+  textValue: 'T',
+  matchOperator: 'NONE'
+};
+
+export const FIELD_NAMES = [
+  'EMAIL_ADDRESS_',
+  ''
+];
