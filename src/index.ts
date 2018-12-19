@@ -6,6 +6,8 @@ export { RecipientData } from './send/RecipientData';
 export { OptionalData } from './send/OptionalData';
 export { TriggerEmailMessage } from './send/TriggerEmailMessage';
 export { TriggerEmailMessageRequest } from './send/TriggerEmailMessageRequest';
+export { TriggerEventMessage } from './send/TriggerEventMessage';
+export { TriggerEventMessageRequest } from './send/TriggerEventMessageRequest';
 export { MergeEmail } from './merge/MergeEmail';
 export { MergeTriggerEmailRecordData } from './merge/MergeTriggerEmailRecordData';
 export { MergeTriggerEmailRequest } from './merge/MergeTriggerEmailRequest';
