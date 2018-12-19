@@ -20,6 +20,8 @@ export const INVALID_REQUEST_PARAMETERS = 'Invalid request parameters';
 
 export const INVALID_PARAMETER = 'INVALID_PARAMETER';
 
+export const BASE_URL = '/rest/api/v1.3';
+
 export const MERGER_RULE = {
   htmlValue: 'H',
   matchColumnName1: 'EMAIL_ADDRESS_',
