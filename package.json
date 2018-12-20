@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/comparaonline/responsys-node-api/issues"
   },
-  "main": "build/index.ts",
+  "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
     "compile": "tsc --outDir ./build",
