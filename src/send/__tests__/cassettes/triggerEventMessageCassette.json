@@ -1,0 +1,231 @@
+[
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E6TUwJjzRLGHqYjMpUqiT2sin6OoLZe0hVLaJIHX5lU0N-bZng1xyM",
+      "issuedAt": 1545920982749,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-d6e1245ca07547317fb82fb8 0",
+      "Date",
+      "Thu, 27 Dec 2018 14:29:42 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/events/test",
+    "body": {
+      "customEvent": {
+        "eventNumberDataMapping": "",
+        "eventDateDataMapping": "",
+        "eventStringDataMapping": ""
+      },
+      "recipientData": [
+        {
+          "recipient": {
+            "emailAddress": "tsuarez@comparaonline.com",
+            "emailFormat": "HTML_FORMAT",
+            "mobileNumber": "951349394"
+          },
+          "optionalData": [
+            {
+              "name": "FIST_NAME",
+              "value": "name"
+            },
+            {
+              "name": "LAST_NAME",
+              "value": "last name"
+            }
+          ]
+        }
+      ]
+    },
+    "status": 200,
+    "response": [
+      {
+        "errorMessage": "PROFILE_LIST_NOT_FOUND",
+        "recipientId": -1,
+        "success": false
+      }
+    ],
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-d8e1245c022728c8ae8d1683 0",
+      "Date",
+      "Thu, 27 Dec 2018 14:29:44 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/events/test",
+    "body": {
+      "customEvent": {
+        "eventNumberDataMapping": "",
+        "eventDateDataMapping": "",
+        "eventStringDataMapping": ""
+      },
+      "recipientData": [
+        {
+          "recipient": {
+            "emailAddress": "tsuarez@comparaonline.com",
+            "emailFormat": "HTML_FORMAT",
+            "mobileNumber": "951349394",
+            "listName": {
+              "objectName": "CONTACTS_LIST",
+              "folderName": "CONTACTS_LIST"
+            }
+          },
+          "optionalData": [
+            {
+              "name": "FIST_NAME",
+              "value": "name"
+            },
+            {
+              "name": "LAST_NAME",
+              "value": "last name"
+            }
+          ]
+        }
+      ]
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Not a valid token",
+      "errorCode": "INVALID_TOKEN",
+      "detail": "Not a valid authentication token",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-d9e1245c2e76b3b3d0644fad 0",
+      "Date",
+      "Thu, 27 Dec 2018 14:29:45 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E9Vtwmy3XbZMVinZVU4avdM5rn8hGVakFDcevpgJgXJDYtsJZCX4cw",
+      "issuedAt": 1545921016637,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-f8e1245c3f73320fdb2eedb7 0",
+      "Date",
+      "Thu, 27 Dec 2018 14:30:16 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/events/test",
+    "body": {
+      "customEvent": {
+        "eventNumberDataMapping": "",
+        "eventDateDataMapping": "",
+        "eventStringDataMapping": ""
+      },
+      "recipientData": [
+        {
+          "recipient": {
+            "emailAddress": "tsuarez@comparaonline.com",
+            "emailFormat": "HTML_FORMAT",
+            "mobileNumber": "951349394",
+            "listName": {
+              "objectName": "CONTACTS_LIST",
+              "folderName": "CONTACTS_LIST"
+            }
+          },
+          "optionalData": [
+            {
+              "name": "FIST_NAME",
+              "value": "name"
+            },
+            {
+              "name": "LAST_NAME",
+              "value": "last name"
+            }
+          ]
+        }
+      ]
+    },
+    "status": 200,
+    "response": [
+      {
+        "errorMessage": null,
+        "success": true,
+        "recipientId": 364470825
+      }
+    ],
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-f9e1245c78df4a7ebbe9518f 0",
+      "Date",
+      "Thu, 27 Dec 2018 14:30:17 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  }
+]

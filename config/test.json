@@ -1,13 +1,13 @@
 {
   "auth": {
-    "endPoint": "https://login5.responsys.net/rest/api/v1.3/auth/token",
+    "endPoint": "https://api5-009.responsys.net/rest/api/v1.3/auth/token",
     "username": "test",
     "password": "test",
-    "token": "qsdas32asdadasawadawdadaw"
+    "token": "E2vaLw-tAsW_ucBUNX9VVfF1oQ1SjRgh7dGpLGYG6OyjT4lQePQ7a0"
   },
   "refresh": {
-    "authToken": "asdasdawdwdawdasxaw3342342adasd23",
-    "issuedAt": 1524079766511,
+    "authToken": "E2vaLw-tAsW_ucBUNX9VVfF1oQ1SjRgh7dGpLGYG6OyjT4lQePQ7a0",
+    "issuedAt": 1545918096584,
     "endPoint": "https://api5-009.responsys.net"
   },
   "campaign": "[TEST]_Masivo_Cyber_Nov17_test"

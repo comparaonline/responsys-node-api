@@ -2,603 +2,40 @@
   {
     "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "EfBybDftKA94p_2WvCpVzxShYesWGNg0X8m2xjjZcw499MWo74CAEM",
+      "issuedAt": 1545919883446,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-8bdd245c78761042b17d9b56 0",
+      "Date",
+      "Thu, 27 Dec 2018 14:11:23 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/test/email",
     "body": {
       "recipientData": [
         {
           "recipient": {
-            "emailAddress": "dev@comparaonline.com",
-            "emailFormat": "HTML_FORMAT",
-            "mobileNumber": "951349394"
-          }
-        }
-      ]
-    },
-    "status": 401,
-    "response": {
-      "type": "",
-      "title": "Not a valid token",
-      "errorCode": "INVALID_TOKEN",
-      "detail": "Not a valid authentication token",
-      "errorDetails": []
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-f519df5a8187f50a3b4e6be6 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:13 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570644595,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-141adf5a7b8a1ed36af40854 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:44 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://api5-009.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
-    "body": {
-      "recipientData": [
-        {
-          "recipient": {
-            "emailAddress": "dev@comparaonline.com",
-            "emailFormat": "HTML_FORMAT",
-            "mobileNumber": "951349394"
-          }
-        }
-      ]
-    },
-    "status": 200,
-    "response": [
-      {
-        "errorMessage": null,
-        "recipientId": 1477825,
-        "success": true
-      }
-    ],
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-151adf5a5590c6127eb2cfbe 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:45 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570647035,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-171adf5a2c8e794e1a15d86a 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:47 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=wrong_password&auth_type=password",
-    "status": 400,
-    "response": {
-      "type": "",
-      "title": "Invalid username or password",
-      "errorCode": "INVALID_USER_NAME_PASSWORD",
-      "detail": "Login failed",
-      "errorDetails": []
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-171adf5a1eecc6ff4fb312e2 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:47 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570648813,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-181adf5a16ece897f3605a8c 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:48 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "auth_type=token",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570649627,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-191adf5a3a8b47666b52e569 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:49 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570650549,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-1a1adf5a199113bcd29ae642 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:50 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "auth_type=token",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570651422,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-1b1adf5aa9ecbe93f26964fe 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:51 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "auth_type=token",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570652380,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-1c1adf5a9a8ddf2b37b60218 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:52 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570654243,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-1e1adf5ada8d044549f36494 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:54 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://api5-009.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
-    "body": {
-      "mergeTriggerRecordData": {
-        "mergeTriggerRecords": [
-          {
-            "fieldValues": [
-              "suarezcumare@gmail.com",
-              "suarezcumare"
-            ],
-            "optionalData": [
-              {
-                "name": "FIRST_NAME",
-                "value": "Alexander"
-              },
-              {
-                "name": "LAST_NAME",
-                "value": "Cumare"
-              }
-            ]
-          }
-        ],
-        "fieldNames": [
-          "EMAIL_ADDRESS_",
-          ""
-        ]
-      },
-      "mergeRule": {
-        "htmlValue": "H",
-        "matchColumnName1": "EMAIL_ADDRESS_",
-        "matchColumnName2": null,
-        "optoutValue": "O",
-        "insertOnNoMatch": true,
-        "defaultPermissionStatus": "OPTIN",
-        "rejectRecordIfChannelEmpty": "E",
-        "optinValue": "I",
-        "textValue": "T",
-        "matchOperator": "NONE"
-      }
-    },
-    "status": 200,
-    "response": [
-      {
-        "errorMessage": null,
-        "success": true,
-        "recipientId": 364472425
-      }
-    ],
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-1f1adf5a31edacd5d439573f 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:55 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://api5-009.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
-    "body": {
-      "mergeTriggerRecordData": {
-        "mergeTriggerRecords": [
-          {
-            "fieldValues": [
-              "email@.com",
-              "email"
-            ],
-            "optionalData": [
-              {
-                "name": "FIST_NAME",
-                "value": "first"
-              },
-              {
-                "name": "LAST_NAME",
-                "value": "name"
-              }
-            ]
-          }
-        ],
-        "fieldNames": [
-          "EMAIL_ADDRESS_",
-          ""
-        ]
-      },
-      "mergeRule": {
-        "htmlValue": "H",
-        "matchColumnName1": "EMAIL_ADDRESS_",
-        "matchColumnName2": null,
-        "optoutValue": "O",
-        "insertOnNoMatch": true,
-        "defaultPermissionStatus": "OPTIN",
-        "rejectRecordIfChannelEmpty": "E",
-        "optinValue": "I",
-        "textValue": "T",
-        "matchOperator": "NONE"
-      }
-    },
-    "status": 401,
-    "response": {
-      "type": "",
-      "title": "Not a valid token",
-      "errorCode": "INVALID_TOKEN",
-      "detail": "Not a valid authentication token",
-      "errorDetails": []
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-201adf5a4eed9d2e4363d998 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:56 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570687765,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-3f1adf5a8a94d81a8736be17 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:51:27 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://api5-009.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
-    "body": {
-      "mergeTriggerRecordData": {
-        "mergeTriggerRecords": [
-          {
-            "fieldValues": [
-              "email@.com",
-              "email"
-            ],
-            "optionalData": [
-              {
-                "name": "FIST_NAME",
-                "value": "first"
-              },
-              {
-                "name": "LAST_NAME",
-                "value": "name"
-              }
-            ]
-          }
-        ],
-        "fieldNames": [
-          "EMAIL_ADDRESS_",
-          ""
-        ]
-      },
-      "mergeRule": {
-        "htmlValue": "H",
-        "matchColumnName1": "EMAIL_ADDRESS_",
-        "matchColumnName2": null,
-        "optoutValue": "O",
-        "insertOnNoMatch": true,
-        "defaultPermissionStatus": "OPTIN",
-        "rejectRecordIfChannelEmpty": "E",
-        "optinValue": "I",
-        "textValue": "T",
-        "matchOperator": "NONE"
-      }
-    },
-    "status": 400,
-    "response": {
-      "type": "",
-      "title": "Invalid request parameters",
-      "errorCode": "INVALID_PARAMETER",
-      "detail": "Record 0 = Bad Email Format\r\n",
-      "errorDetails": []
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-401adf5a52f21df72903d7d7 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:51:28 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "user_name=test&password=test&auth_type=password",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570689427,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-411adf5a6bf260b0e4cd5c9c 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:51:29 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://api5-009.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
-    "body": {
-      "recipientData": [
-        {
-          "recipient": {
-            "emailAddress": "dev@comparaonline.com",
+            "emailAddress": "tsuarez@comparaonline.com",
             "emailFormat": "HTML_FORMAT",
             "mobileNumber": "951349394"
           },
@@ -620,20 +57,20 @@
       {
         "errorMessage": null,
         "success": true,
-        "recipientId": 1477825
+        "recipientId": 364470825
       }
     ],
     "rawHeaders": [
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-421adf5a3f9716adde6aaa5c 0",
+      "Id-8cdd245c281b96e6da3f0793 0",
       "Date",
-      "Tue, 24 Apr 2018 11:51:30 GMT",
+      "Thu, 27 Dec 2018 14:11:24 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -643,7 +80,143 @@
   {
     "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "path": "/rest/api/v1.3/campaigns/test/email",
+    "body": {
+      "recipientData": [
+        {
+          "recipient": {
+            "emailAddress": "tsuarez@comparaonline.com",
+            "emailFormat": "HTML_FORMAT",
+            "mobileNumber": "951349394",
+            "listName": {
+              "objectName": "CONTACTS_LIST",
+              "folderName": "CONTACTS_LIST"
+            }
+          },
+          "optionalData": [
+            {
+              "name": "FIST_NAME",
+              "value": "name"
+            },
+            {
+              "name": "LAST_NAME",
+              "value": "last name"
+            }
+          ]
+        }
+      ]
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Not a valid token",
+      "errorCode": "INVALID_TOKEN",
+      "detail": "Not a valid authentication token",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-8edd245cad806e3fc28eac0e 0",
+      "Date",
+      "Thu, 27 Dec 2018 14:11:26 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "Ef5c_h40o2XADEpwxYVfAgcdXUMnREh82Bm3OT58WeA6oQbZZ-dt2w",
+      "issuedAt": 1545919916925,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-acdd245ccb869ea97e53476d 0",
+      "Date",
+      "Thu, 27 Dec 2018 14:11:56 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/test/email",
+    "body": {
+      "recipientData": [
+        {
+          "recipient": {
+            "emailAddress": "tsuarez@comparaonline.com",
+            "emailFormat": "HTML_FORMAT",
+            "mobileNumber": "951349394",
+            "listName": {
+              "objectName": "CONTACTS_LIST",
+              "folderName": "CONTACTS_LIST"
+            }
+          },
+          "optionalData": [
+            {
+              "name": "FIST_NAME",
+              "value": "name"
+            },
+            {
+              "name": "LAST_NAME",
+              "value": "last name"
+            }
+          ]
+        }
+      ]
+    },
+    "status": 200,
+    "response": [
+      {
+        "errorMessage": null,
+        "recipientId": 364470825,
+        "success": true
+      }
+    ],
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-addd245c417d4387affc9c99 0",
+      "Date",
+      "Thu, 27 Dec 2018 14:11:57 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/campaigns/test/email",
     "body": {
       "recipientData": [
         {
@@ -665,13 +238,13 @@
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-431adf5aa791694c7af4a7d7 0",
+      "Id-aedd245c687d344b2979b25e 0",
       "Date",
-      "Tue, 24 Apr 2018 11:51:31 GMT",
+      "Thu, 27 Dec 2018 14:11:58 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -679,14 +252,14 @@
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570721963,
+      "authToken": "E6suDRDf2UybGEnx4IwlzMxmusF-xVqHt0UwydLJWx4H_M_YDmnyyM",
+      "issuedAt": 1545919952525,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -697,9 +270,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-611adf5afa954ec242db03ae 0",
+      "Id-d0dd245ccf292d9d92396dfc 0",
       "Date",
-      "Tue, 24 Apr 2018 11:52:01 GMT",
+      "Thu, 27 Dec 2018 14:12:32 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -709,7 +282,7 @@
   {
     "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "path": "/rest/api/v1.3/campaigns/test/email",
     "body": {
       "recipientData": [
         {
@@ -723,8 +296,8 @@
     "response": [
       {
         "errorMessage": "NO_RECIPIENT_FOUND: Recipient Not Found",
-        "success": false,
-        "recipientId": -1
+        "recipientId": -1,
+        "success": false
       }
     ],
     "rawHeaders": [
@@ -735,9 +308,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-621adf5a47f7708c624096f0 0",
+      "Id-d1dd245c818568fe60fd1f08 0",
       "Date",
-      "Tue, 24 Apr 2018 11:52:02 GMT",
+      "Thu, 27 Dec 2018 14:12:33 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -747,7 +320,7 @@
   {
     "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "path": "/rest/api/v1.3/campaigns/test/email",
     "body": {
       "recipientData": [
         {
@@ -770,13 +343,13 @@
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-641adf5a67f7685371c8b0e7 0",
+      "Id-d2dd245ca2e6b5b5ec952560 0",
       "Date",
-      "Tue, 24 Apr 2018 11:52:04 GMT",
+      "Thu, 27 Dec 2018 14:12:34 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -784,14 +357,14 @@
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570755121,
+      "authToken": "Ef4dAhgZyouAbIJ5f2wFIqDe7fjfDBvVsCZP_zan_2vCib8ZmTMerw",
+      "issuedAt": 1545919985121,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -802,9 +375,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-831adf5a579e15aa2b692ecb 0",
+      "Id-f1dd245c83f885d053858190 0",
       "Date",
-      "Tue, 24 Apr 2018 11:52:35 GMT",
+      "Thu, 27 Dec 2018 14:13:05 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -814,7 +387,7 @@
   {
     "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
-    "path": "/rest/api/v1.3/campaigns/%5BTEST%5D_Masivo_Cyber_Nov17_test/email",
+    "path": "/rest/api/v1.3/campaigns/test/email",
     "body": {
       "recipientData": [
         {
@@ -829,8 +402,8 @@
     "response": [
       {
         "errorMessage": "RECIPIENT_STATUS_UNDELIVERABLE: Recipient deliverability status is undeliverable",
-        "success": false,
-        "recipientId": -1
+        "recipientId": -1,
+        "success": false
       }
     ],
     "rawHeaders": [
@@ -841,9 +414,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-831adf5a179b62eb5e4eb1b3 0",
+      "Id-f1dd245c53470de49453d483 0",
       "Date",
-      "Tue, 24 Apr 2018 11:52:35 GMT",
+      "Thu, 27 Dec 2018 14:13:05 GMT",
       "Server",
       "Apache",
       "Content-Type",

@@ -26,13 +26,13 @@
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-f519df5a8187f50a3b4e6be6 0",
+      "Id-ccd6245caf83d0861a5c8007 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:13 GMT",
+      "Thu, 27 Dec 2018 13:42:36 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -40,27 +40,27 @@
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570644595,
+      "authToken": "Ec6U1_zmZjpUqL3AFhk3T3NIyhqkP_XIrMrlFOCZBxYSFNnD8iXViM",
+      "issuedAt": 1545918187627,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-141adf5a7b8a1ed36af40854 0",
+      "Id-ebd6245ce41c3fcd99cd367b 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:44 GMT",
+      "Thu, 27 Dec 2018 13:43:07 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -85,22 +85,22 @@
     "status": 200,
     "response": [
       {
-        "errorMessage": null,
-        "recipientId": 1477825,
-        "success": true
+        "success": false,
+        "errorMessage": "NO_RECIPIENT_FOUND: Recipient Not Found",
+        "recipientId": -1
       }
     ],
     "rawHeaders": [
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-151adf5a5590c6127eb2cfbe 0",
+      "Id-ecd6245c95c15c892b7742b6 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:45 GMT",
+      "Thu, 27 Dec 2018 13:43:08 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -108,27 +108,27 @@
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570647035,
+      "authToken": "E2N69kuEobyaciQPWO2ijLx0wgkSnmJ8zJBX9IdUtUzJ4sLqjcp1Ag",
+      "issuedAt": 1545918189326,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-171adf5a2c8e794e1a15d86a 0",
+      "Id-edd6245cfa26e1004292c307 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:47 GMT",
+      "Thu, 27 Dec 2018 13:43:09 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -136,7 +136,7 @@
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=wrong_password&auth_type=password",
@@ -145,7 +145,7 @@
       "type": "",
       "title": "Invalid username or password",
       "errorCode": "INVALID_USER_NAME_PASSWORD",
-      "detail": "Login failed",
+      "detail": "",
       "errorDetails": []
     },
     "rawHeaders": [
@@ -156,9 +156,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-171adf5a1eecc6ff4fb312e2 0",
+      "Id-eed6245c2b27ebe200573e75 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:47 GMT",
+      "Thu, 27 Dec 2018 13:43:10 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -166,42 +166,14 @@
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570648813,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-181adf5a16ece897f3605a8c 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:48 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json;charset=UTF-8"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "auth_type=token",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570649627,
+      "authToken": "EfuElg5E9-OGm2FgokAizOecCmNjvglIwJWtqvYAdGxPn51_InITjM",
+      "issuedAt": 1545918191089,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -212,9 +184,37 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-191adf5a3a8b47666b52e569 0",
+      "Id-efd6245c1fc27e5461e4a28d 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:49 GMT",
+      "Thu, 27 Dec 2018 13:43:11 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "auth_type=token",
+    "status": 200,
+    "response": {
+      "authToken": "E5VI_GqfkXmvosZeFj4q-o5CDNeLkUN6S23WDg6XNCF6uu58RZCJ1M",
+      "issuedAt": 1545918191936,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-efd6245c7c271f22b55fc790 0",
+      "Date",
+      "Thu, 27 Dec 2018 13:43:11 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -222,14 +222,42 @@
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570650549,
+      "authToken": "EeW1pwQObVKiZUSDII1pzb0ifI4MSW1VvbQdARYk--y8-urF95Cr6w",
+      "issuedAt": 1545918192830,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-f0d6245cfd1d5b225a44203b 0",
+      "Date",
+      "Thu, 27 Dec 2018 13:43:12 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "auth_type=token",
+    "status": 200,
+    "response": {
+      "authToken": "E135fanvEE3LFN1zRQbMMdS6517fg3QuSSJDb6wCVotaHzwyoPT0Xw",
+      "issuedAt": 1545918193680,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -240,24 +268,24 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1a1adf5a199113bcd29ae642 0",
+      "Id-f1d6245c3e8a3e8721bd44f5 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:50 GMT",
+      "Thu, 27 Dec 2018 13:43:13 GMT",
       "Server",
       "Apache",
       "Content-Type",
-      "application/json;charset=UTF-8"
+      "application/json"
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "auth_type=token",
     "status": 200,
     "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570651422,
+      "authToken": "EcIzZGH1ndhVthltytBXHwnD7KKb-pVKBVGXSVf82DQU6SvWRmw3oM",
+      "issuedAt": 1545918194563,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -268,9 +296,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1b1adf5aa9ecbe93f26964fe 0",
+      "Id-f2d6245c511e3b4ba7123ab9 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:51 GMT",
+      "Thu, 27 Dec 2018 13:43:14 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -278,55 +306,27 @@
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
-    "method": "POST",
-    "path": "/rest/api/v1.3/auth/token",
-    "body": "auth_type=token",
-    "status": 200,
-    "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570652380,
-      "endPoint": "https://api5-009.responsys.net"
-    },
-    "rawHeaders": [
-      "Max-Forwards",
-      "20",
-      "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
-      "Connection",
-      "close",
-      "X-CorrelationID",
-      "Id-1c1adf5a9a8ddf2b37b60218 0",
-      "Date",
-      "Tue, 24 Apr 2018 11:50:52 GMT",
-      "Server",
-      "Apache",
-      "Content-Type",
-      "application/json"
-    ]
-  },
-  {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570654243,
+      "authToken": "E09aVHZjihxHO5HP6sBUadI7ChDOVRzZIU7i1jyGVptnJGd2gXH8y0",
+      "issuedAt": 1545918195970,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1e1adf5ada8d044549f36494 0",
+      "Id-f3d6245c38281e3eb59d321b 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:54 GMT",
+      "Thu, 27 Dec 2018 13:43:15 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -380,7 +380,7 @@
       {
         "errorMessage": null,
         "success": true,
-        "recipientId": 364472425
+        "recipientId": 456826505
       }
     ],
     "rawHeaders": [
@@ -391,9 +391,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-1f1adf5a31edacd5d439573f 0",
+      "Id-f4d6245c5d282e2092feb075 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:55 GMT",
+      "Thu, 27 Dec 2018 13:43:16 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -454,13 +454,13 @@
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-201adf5a4eed9d2e4363d998 0",
+      "Id-f5d6245c7ed93c518538aa79 0",
       "Date",
-      "Tue, 24 Apr 2018 11:50:56 GMT",
+      "Thu, 27 Dec 2018 13:43:17 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -468,14 +468,14 @@
     ]
   },
   {
-    "scope": "https://login5.responsys.net:443",
+    "scope": "https://api5-009.responsys.net:443",
     "method": "POST",
     "path": "/rest/api/v1.3/auth/token",
     "body": "user_name=test&password=test&auth_type=password",
     "status": 200,
     "response": {
-      "authToken": "asdasdq3QWweqweqweqwEasdasdasdQASDA323",
-      "issuedAt": 1524570687765,
+      "authToken": "E4aSlnp-6OCgyjlwtkcQS_1ZwU4ISS6RWduYYcTVSQ2ZiBcTLsKEyM",
+      "issuedAt": 1545918228713,
       "endPoint": "https://api5-009.responsys.net"
     },
     "rawHeaders": [
@@ -486,9 +486,9 @@
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-3f1adf5a8a94d81a8736be17 0",
+      "Id-14d7245cd284eecfb89f04ba 0",
       "Date",
-      "Tue, 24 Apr 2018 11:51:27 GMT",
+      "Thu, 27 Dec 2018 13:43:48 GMT",
       "Server",
       "Apache",
       "Content-Type",
@@ -549,13 +549,13 @@
       "Max-Forwards",
       "20",
       "Via",
-      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
       "Connection",
       "close",
       "X-CorrelationID",
-      "Id-401adf5a52f21df72903d7d7 0",
+      "Id-15d7245ca8de7726cf16e1a0 0",
       "Date",
-      "Tue, 24 Apr 2018 11:51:28 GMT",
+      "Thu, 27 Dec 2018 13:43:49 GMT",
       "Server",
       "Apache",
       "Content-Type",
