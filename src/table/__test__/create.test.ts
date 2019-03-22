@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { HttpRecorder } from 'nock-utils';
 import * as queryString from 'querystring';
 import { AuthCache } from '../../auth/AuthCache';
-import { Field } from '../create/Field';
+import { Field } from '../create/field';
 import { TableData } from '../create/TableData';
 import { TableCreateRequest } from '../create/CreateRequest';
 import { TableCreateMessage } from '../create/CreateMessage';

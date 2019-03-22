@@ -17,7 +17,7 @@ export { MergeTriggerEmailRequest } from './merge/MergeTriggerEmailRequest';
 export { MergeTriggerRecordData } from './merge/MergeTriggerRecordData';
 
 export { TableCreateMessage } from './table/create/CreateMessage';
-export { Field } from './table/create/Field';
+export { Field } from './table/create/field';
 export { TableCreateRequest } from './table/create/CreateRequest';
 export { TableData } from './table/create/TableData';
 
