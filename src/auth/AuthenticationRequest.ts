@@ -1,7 +1,7 @@
 import * as queryString from 'querystring';
 import { Request } from '../commons/Request';
 import { AuthConfig } from './AuthConfig';
-import { TYPE_PASSWORD } from './../Constants';
+import { TYPE_PASSWORD } from '../Constants';
 
 
 export class AuthenticationRequest extends Request {

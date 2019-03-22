@@ -1,0 +1,445 @@
+[
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "EbOX2d2zQVUXI_4gpeShW0wPGM6HsjzfIe7K4Do4CfdUj6gEVt4baM",
+      "issuedAt": 1553256056695,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-78ce945c205443099ca52d45 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:00:56 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys?ft=PK",
+    "body": "",
+    "status": 200,
+    "response": {
+      "fields": [
+        {
+          "fieldName": "OFFERID",
+          "fieldType": "INTEGER"
+        }
+      ],
+      "suppData": {
+        "folderName": "test_api",
+        "objectName": "test_api_responsys"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys?ft=PK",
+          "method": "GET"
+        },
+        {
+          "rel": "mergeTableMembers",
+          "href": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+          "method": "POST"
+        },
+        {
+          "rel": "retrieveTableMembers",
+          "href": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+          "method": "GET"
+        },
+        {
+          "rel": "deleteTableMembers",
+          "href": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+          "method": "DELETE"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-79ce945c034fadedc61f035d 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:00:57 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Not a valid token",
+      "errorCode": "INVALID_TOKEN",
+      "detail": "Not a valid authentication token",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-7ace945c164b2b3501161a93 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:00:58 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E6m8phYzXFdsZpDsZHebpysmjsWH6JbecPJxJBrQ6IMVkUwmwdzKPg",
+      "issuedAt": 1553256059515,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-7bce945c46b012525752bb63 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:00:59 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-7cce945cd3b9a28f311a310d 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:00 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-7dce945c714b6761009d9c68 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:01 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-7ece945ca44b2ec592df3da8 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:02 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-7fce945cb35a33267990b9f3 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:03 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-81ce945c095bce19bc3a62f7 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:05 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-83ce945c2bbb3b58ec543c11 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:07 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-87ce945c5b4d276e06db7a4c 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:11 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-8fce945cb252fe98e685888f 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:19 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-9cce945c485ac0ce1dab1645 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:32 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "GET",
+    "path": "/rest/api/v1.3/folder/test_api/suppData/test_api_responsys_invalid?ft=PK",
+    "body": "",
+    "status": 404,
+    "response": {
+      "type": "",
+      "title": "Resource not found",
+      "errorCode": "RESOURCE_NOT_FOUND",
+      "detail": "Supplemental name [test_api_responsys_invalid] does not exist",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-b7ce945c016325fe13e0f532 0",
+      "Date",
+      "Fri, 22 Mar 2019 12:01:59 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  }
+]

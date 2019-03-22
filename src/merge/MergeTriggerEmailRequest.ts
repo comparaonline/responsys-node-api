@@ -3,7 +3,7 @@ import { MergeTriggerRecordData } from './MergeTriggerRecordData';
 import {
   CONTENT_TYPE_JSON,
   MERGER_RULE
-} from './../Constants';
+} from '../Constants';
 
 export class MergeTriggerEmailRequest extends Request {
 

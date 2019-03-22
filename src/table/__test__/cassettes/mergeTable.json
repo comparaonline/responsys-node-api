@@ -1,0 +1,398 @@
+[
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E7ep9rzZTirMPDkdfawH8wSue9pccN5MH3bIPwiaIY8-9ZUvIPDSQ0",
+      "issuedAt": 1553255838691,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-9ecd945cb02e68646e5d0577 0",
+      "Date",
+      "Fri, 22 Mar 2019 11:57:18 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+    "body": {
+      "recordData": {
+        "fieldNames": [
+          "OFFERID",
+          "OFFERNAME",
+          "OFFEREMAIL",
+          "OFFERDATE"
+        ],
+        "mapTemplateName": null,
+        "records": [
+          [
+            "1",
+            "test3",
+            "prueba@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ],
+          [
+            "2",
+            "test4",
+            "prueba2@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ]
+        ]
+      },
+      "insertOnNoMatch": true,
+      "updateOnMatch": "REPLACE_ALL"
+    },
+    "status": 200,
+    "response": {
+      "recordData": {
+        "fieldNames": [
+          "OFFERID",
+          "OFFERNAME",
+          "OFFEREMAIL",
+          "OFFERDATE"
+        ],
+        "records": [
+          [
+            "1",
+            "test3",
+            "prueba@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ],
+          [
+            "2",
+            "test4",
+            "prueba2@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ]
+        ],
+        "mapTemplateName": null
+      },
+      "insertOnNoMatch": true,
+      "updateOnMatch": "REPLACE_ALL",
+      "matchColumnNames": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+          "method": "POST"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-9fcd945cbe2a2cd3fffcc892 0",
+      "Date",
+      "Fri, 22 Mar 2019 11:57:19 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+    "body": {
+      "recordData": {
+        "fieldNames": [
+          "OFFERID",
+          "OFFERNAME",
+          "OFFEREMAIL",
+          "OFFERDATE"
+        ],
+        "mapTemplateName": null,
+        "records": [
+          [
+            "1w",
+            "test1",
+            "prueba@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ]
+        ]
+      },
+      "insertOnNoMatch": true,
+      "updateOnMatch": "REPLACE_ALL"
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Not a valid token",
+      "errorCode": "INVALID_TOKEN",
+      "detail": "Not a valid authentication token",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-a0cd945ce32a37a28ff91491 0",
+      "Date",
+      "Fri, 22 Mar 2019 11:57:20 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E4V7Pdj8INT13GzOcTJ33hUHipPcY5sAh83_MbpFvX0ejLmj4bWscM",
+      "issuedAt": 1553255871480,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-bfcd945c6f3ec24ea9308e70 0",
+      "Date",
+      "Fri, 22 Mar 2019 11:57:51 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+    "body": {
+      "recordData": {
+        "fieldNames": [
+          "OFFERID",
+          "OFFERNAME",
+          "OFFEREMAIL",
+          "OFFERDATE"
+        ],
+        "mapTemplateName": null,
+        "records": [
+          [
+            "1w",
+            "test1",
+            "prueba@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ]
+        ]
+      },
+      "insertOnNoMatch": true,
+      "updateOnMatch": "REPLACE_ALL"
+    },
+    "status": 200,
+    "response": {
+      "recordData": {
+        "fieldNames": [
+          "OFFERID",
+          "OFFERNAME",
+          "OFFEREMAIL",
+          "OFFERDATE"
+        ],
+        "records": [
+          [
+            "MERGEFAILED: Record 0 = The value \"1w\" is not valid for the field type INTEGER\r\n",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "mapTemplateName": null
+      },
+      "insertOnNoMatch": true,
+      "updateOnMatch": "REPLACE_ALL",
+      "matchColumnNames": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+          "method": "POST"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-c0cd945c903efa5b851891d5 0",
+      "Date",
+      "Fri, 22 Mar 2019 11:57:52 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+    "body": {
+      "recordData": {
+        "fieldNames": [
+          "OFFERID",
+          "OFFERNAME",
+          "OFFEREMAIL",
+          "OFFERDATE"
+        ],
+        "mapTemplateName": null,
+        "records": [
+          [
+            "1",
+            "test1",
+            "prueba@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ]
+        ]
+      },
+      "insertOnNoMatch": true,
+      "updateOnMatch": "REPLACE_ALL",
+      "matchColumnNames": [
+        "offerId"
+      ]
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Not a valid token",
+      "errorCode": "INVALID_TOKEN",
+      "detail": "Not a valid authentication token",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-c1cd945c5a9e68250fbd2bc2 0",
+      "Date",
+      "Fri, 22 Mar 2019 11:57:53 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E8rS6zOb2v8jcf-jfS06GdoQk2l1RUmeT_DAmlV92A5OWO_Cwh6Jfg",
+      "issuedAt": 1553255904338,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-e0cd945cd799e249008e96b5 0",
+      "Date",
+      "Fri, 22 Mar 2019 11:58:24 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/folders/test_api/suppData/test_api_responsys/members",
+    "body": {
+      "recordData": {
+        "fieldNames": [
+          "OFFERID",
+          "OFFERNAME",
+          "OFFEREMAIL",
+          "OFFERDATE"
+        ],
+        "mapTemplateName": null,
+        "records": [
+          [
+            "1",
+            "test1",
+            "prueba@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ]
+        ]
+      },
+      "insertOnNoMatch": true,
+      "updateOnMatch": "REPLACE_ALL",
+      "matchColumnNames": [
+        "offerId"
+      ]
+    },
+    "status": 400,
+    "response": {
+      "type": "",
+      "title": "Invalid request parameters",
+      "errorCode": "INVALID_PARAMETER",
+      "detail": "MatchColumnNames must be null or must not be specified to merge into a table that has primary keys",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-e1cd945c383ed23884a8cc7d 0",
+      "Date",
+      "Fri, 22 Mar 2019 11:58:25 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 import { Request } from '../commons/Request';
 import { RecipientData } from './RecipientData';
-import { CONTENT_TYPE_JSON, BASE_URL } from './../Constants';
+import { CONTENT_TYPE_JSON, BASE_URL } from '../Constants';
 
 export class TriggerEmailMessageRequest extends Request {
 

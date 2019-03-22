@@ -1,0 +1,229 @@
+[
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E31JIvfu33SM9S008I3IU0z7zLYrJkvpkRDEjIzDLHSnIQ6IKvlKWM",
+      "issuedAt": 1553201688159,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-18fa935c4cd97710d4b242cf 0",
+      "Date",
+      "Thu, 21 Mar 2019 20:54:48 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/folders/test_api/suppData",
+    "body": {
+      "table": {
+        "objectName": "test_api_responsys"
+      },
+      "primaryKeys": [
+        "offerId"
+      ],
+      "fields": [
+        {
+          "fieldName": "offerId",
+          "fieldType": "INTEGER",
+          "dataExtractionKey": false
+        },
+        {
+          "fieldName": "offerName",
+          "fieldType": "STR100",
+          "dataExtractionKey": false
+        },
+        {
+          "fieldName": "offerEmail",
+          "fieldType": "STR500",
+          "dataExtractionKey": false
+        },
+        {
+          "fieldName": "offerDate",
+          "fieldType": "TIMESTAMP",
+          "dataExtractionKey": false
+        }
+      ]
+    },
+    "status": 200,
+    "response": true,
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-19fa935c9ed59b9f4394f480 0",
+      "Date",
+      "Thu, 21 Mar 2019 20:54:49 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/folders/test_api/suppData",
+    "body": {
+      "table": {
+        "objectName": "test_api_responsys"
+      },
+      "primaryKeys": [
+        "otherPrimary"
+      ],
+      "fields": [
+        {
+          "fieldName": "offerId",
+          "fieldType": "INTEGER",
+          "dataExtractionKey": false
+        },
+        {
+          "fieldName": "offerName",
+          "fieldType": "STR100",
+          "dataExtractionKey": false
+        },
+        {
+          "fieldName": "offerEmail",
+          "fieldType": "STR5000",
+          "dataExtractionKey": false
+        },
+        {
+          "fieldName": "offerDate",
+          "fieldType": "TIMESTAMP",
+          "dataExtractionKey": false
+        }
+      ]
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Not a valid token",
+      "errorCode": "INVALID_TOKEN",
+      "detail": "Not a valid authentication token",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-1afa935ce13a7578921c0ef9 0",
+      "Date",
+      "Thu, 21 Mar 2019 20:54:50 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E89fqnhuUtoJoF7nazQ3JeiksZRmrp1JTOg6iFF5JgIFwoQ5XQ04G0",
+      "issuedAt": 1553201721302,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-39fa935c0fddca380a6f65d8 0",
+      "Date",
+      "Thu, 21 Mar 2019 20:55:21 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/folders/test_api/suppData",
+    "body": {
+      "table": {
+        "objectName": "test_api_responsys"
+      },
+      "primaryKeys": [
+        "otherPrimary"
+      ],
+      "fields": [
+        {
+          "fieldName": "offerId",
+          "fieldType": "INTEGER",
+          "dataExtractionKey": false
+        },
+        {
+          "fieldName": "offerName",
+          "fieldType": "STR100",
+          "dataExtractionKey": false
+        },
+        {
+          "fieldName": "offerEmail",
+          "fieldType": "STR5000",
+          "dataExtractionKey": false
+        },
+        {
+          "fieldName": "offerDate",
+          "fieldType": "TIMESTAMP",
+          "dataExtractionKey": false
+        }
+      ]
+    },
+    "status": 400,
+    "response": {
+      "type": "",
+      "title": "Invalid request parameters",
+      "errorCode": "INVALID_PARAMETER",
+      "detail": "Some Field Types are invalid. Allowed Field Types are 'CHAR', 'STR25', 'STR100', 'STR500', 'STR4000', 'INTEGER', 'NUMBER' and 'TIMESTAMP'.",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-3afa935cebeb078a6ecb5b2f 0",
+      "Date",
+      "Thu, 21 Mar 2019 20:55:22 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  }
+]

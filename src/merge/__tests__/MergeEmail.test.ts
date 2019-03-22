@@ -1,6 +1,6 @@
 import * as config from 'config';
 import { expect } from 'chai';
-import { MergeEmail } from './../MergeEmail';
+import { MergeEmail } from '../MergeEmail';
 import { MergeTriggerRecordData } from '../MergeTriggerRecordData';
 import { MergeTriggerEmailRequest } from '../MergeTriggerEmailRequest';
 import * as queryString from 'querystring';

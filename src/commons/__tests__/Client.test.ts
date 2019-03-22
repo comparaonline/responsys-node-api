@@ -2,7 +2,7 @@ import * as rest from 'rest';
 import * as express from 'express';
 import * as config from 'config';
 import { Client } from '../Client';
-import { Options } from './../Options';
+import { Options } from '../Options';
 import { Request } from '../Request';
 import { expect } from 'chai';
 import { error } from 'util';

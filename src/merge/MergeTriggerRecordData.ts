@@ -1,5 +1,5 @@
 import { MergeTriggerEmailRecordData } from './MergeTriggerEmailRecordData';
-import { FIELD_NAMES } from './../Constants';
+import { FIELD_NAMES } from '../Constants';
 
 export class MergeTriggerRecordData  {
 

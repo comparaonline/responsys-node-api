@@ -601,12 +601,13 @@ nise@^1.2.0:
     path-to-regexp "^1.7.0"
     text-encoding "^0.6.4"
 
-nock-utils@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/nock-utils/-/nock-utils-0.1.1.tgz#be082f0046cb7ea1479f3d8fd8e1d6d9337f1705"
+nock-utils@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.npmjs.org/nock-utils/-/nock-utils-0.2.1.tgz#03f66ab0dd62c4fe3bd794842fc97f1f5e981c2d"
+  integrity sha512-KxSw81XNktu9z+zV84zcfwRdlKJuREkZK/1H3KL+ANOTsS2SPYghXl5QZiZizBDj4UqBpk3fEA029w8Y+wBlEg==
   dependencies:
     jsonfile "^4.0.0"
-    rest "^2.0.0"
+    nock "^9.1.0"
 
 nock@^9.1.0:
   version "9.1.0"

@@ -1,8 +1,8 @@
 import * as interceptor from 'rest/interceptor';
-import { AuthCache } from '../auth/AuthCache';
+import { AuthCache } from './AuthCache';
 
 export class AuthInterceptor {
-  
+
   private authCache = new AuthCache();
 
   public get() {

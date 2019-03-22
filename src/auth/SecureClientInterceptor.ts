@@ -1,6 +1,6 @@
 import * as interceptor from 'rest/interceptor';
-import { AuthCache } from '../auth/AuthCache';
-import { Authentication } from '../auth/Authentication';
+import { AuthCache } from './AuthCache';
+import { Authentication } from './Authentication';
 import { AuthenticationRequest } from './AuthenticationRequest';
 
 export class SecureClientInterceptor {
@@ -15,7 +15,7 @@ export class SecureClientInterceptor {
         if (!this.authCache.isLoaded()) {
           const result = await this.authentication.signin(new AuthenticationRequest());
           request.headers.Authorization = this.authCache.getToken();
-          
+
           return request;
         }
 

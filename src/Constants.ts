@@ -15,6 +15,7 @@ export const CLIENT_OPTIONS_TIME_OUT = 60000;
 export const CLIENT_OPTIONS_ERROR = { code: 404 };
 
 export const HTTP_METHOD_POST = 'POST';
+export const HTTP_METHOD_GET = 'GET';
 
 export const INVALID_REQUEST_PARAMETERS = 'Invalid request parameters';
 
