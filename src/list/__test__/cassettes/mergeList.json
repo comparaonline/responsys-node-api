@@ -1,0 +1,304 @@
+[
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "EdzkxJnQNYOeZAbW4Ae-10-YRkDsn52ybaMu3J4QprBJVAol-MuTqg",
+      "issuedAt": 1553779651352,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-c3cb9c5c59cd75010031fa69 0",
+      "Date",
+      "Thu, 28 Mar 2019 13:27:31 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/lists/api_list_example/members",
+    "body": {
+      "recordData": {
+        "fieldNames": [
+          "EMAIL_ADDRESS_",
+          "BIRTHDATE"
+        ],
+        "mapTemplateName": null,
+        "records": [
+          [
+            "prueba@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ],
+          [
+            "prueba2@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ]
+        ]
+      },
+      "mergeRule": {
+        "htmlValue": "H",
+        "optinValue": "I",
+        "textValue": "T",
+        "insertOnNoMatch": true,
+        "updateOnMatch": "REPLACE_ALL",
+        "matchColumnName1": "EMAIL_ADDRESS_",
+        "optoutValue": "O",
+        "rejectRecordIfChannelEmpty": null,
+        "defaultPermissionStatus": "OPTIN"
+      }
+    },
+    "status": 200,
+    "response": {
+      "recordData": {
+        "fieldNames": [
+          "RIID_"
+        ],
+        "records": [
+          [
+            "470515045"
+          ],
+          [
+            "470515065"
+          ]
+        ],
+        "mapTemplateName": null
+      },
+      "mergeRule": {
+        "textValue": "T",
+        "htmlValue": "H",
+        "optinValue": "I",
+        "insertOnNoMatch": true,
+        "updateOnMatch": "REPLACE_ALL",
+        "matchColumnName1": "EMAIL_ADDRESS_",
+        "matchColumnName2": null,
+        "matchOperator": null,
+        "optoutValue": "O",
+        "rejectRecordIfChannelEmpty": null,
+        "defaultPermissionStatus": "OPTIN",
+        "matchColumnName3": null
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "/rest/api/v1.3/lists/api_list_example/members",
+          "method": "POST"
+        },
+        {
+          "rel": "retrieveListRecipientsRIID",
+          "href": "/rest/api/v1.3/lists/api_list_example/members/<riid>",
+          "method": "GET"
+        },
+        {
+          "rel": "deleteListRecipientsRIID",
+          "href": "/rest/api/v1.3/lists/api_list_example/members/<riid>",
+          "method": "DELETE"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag03-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-c4cb9c5cde2de464a6bb29f0 0",
+      "Date",
+      "Thu, 28 Mar 2019 13:27:32 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/lists/api_list_example/members",
+    "body": {
+      "recordData": {
+        "fieldNames": [
+          "EMAIL_ADDRESS_",
+          "BIRTHDATE"
+        ],
+        "mapTemplateName": null,
+        "records": [
+          [
+            "prueba@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ]
+        ]
+      },
+      "mergeRule": {
+        "htmlValue": "H",
+        "optinValue": "I",
+        "textValue": "T",
+        "insertOnNoMatch": true,
+        "updateOnMatch": "REPLACE_ALL",
+        "matchColumnName1": "EMAIL_ADDRESS_",
+        "optoutValue": "O",
+        "rejectRecordIfChannelEmpty": null,
+        "defaultPermissionStatus": "OPTIN"
+      }
+    },
+    "status": 401,
+    "response": {
+      "type": "",
+      "title": "Not a valid token",
+      "errorCode": "INVALID_TOKEN",
+      "detail": "Not a valid authentication token",
+      "errorDetails": []
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-c5cb9c5ca9c4187e42cf3bb5 0",
+      "Date",
+      "Thu, 28 Mar 2019 13:27:33 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/auth/token",
+    "body": "user_name=test&password=test&auth_type=password",
+    "status": 200,
+    "response": {
+      "authToken": "E2h0UMNhR4oUlByyWrj4_Z1s7z-HsJSedAGoXV_bACg2QipPYgFHHg",
+      "issuedAt": 1553779684133,
+      "endPoint": "https://api5-009.responsys.net"
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag01-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-e4cb9c5c95cac67effc736a9 0",
+      "Date",
+      "Thu, 28 Mar 2019 13:28:04 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  },
+  {
+    "scope": "https://api5-009.responsys.net:443",
+    "method": "POST",
+    "path": "/rest/api/v1.3/lists/api_list_example/members",
+    "body": {
+      "recordData": {
+        "fieldNames": [
+          "EMAIL_ADDRESS_",
+          "BIRTHDATE"
+        ],
+        "mapTemplateName": null,
+        "records": [
+          [
+            "prueba@comparaonline.com",
+            "2019-03-22T11:54:40.531Z"
+          ]
+        ]
+      },
+      "mergeRule": {
+        "htmlValue": "H",
+        "optinValue": "I",
+        "textValue": "T",
+        "insertOnNoMatch": true,
+        "updateOnMatch": "REPLACE_ALL",
+        "matchColumnName1": "EMAIL_ADDRESS_",
+        "optoutValue": "O",
+        "rejectRecordIfChannelEmpty": null,
+        "defaultPermissionStatus": "OPTIN"
+      }
+    },
+    "status": 200,
+    "response": {
+      "recordData": {
+        "fieldNames": [
+          "RIID_"
+        ],
+        "records": [
+          [
+            "470515045"
+          ]
+        ],
+        "mapTemplateName": null
+      },
+      "mergeRule": {
+        "textValue": "T",
+        "htmlValue": "H",
+        "optinValue": "I",
+        "insertOnNoMatch": true,
+        "updateOnMatch": "REPLACE_ALL",
+        "matchColumnName1": "EMAIL_ADDRESS_",
+        "matchColumnName2": null,
+        "matchOperator": null,
+        "optoutValue": "O",
+        "rejectRecordIfChannelEmpty": null,
+        "defaultPermissionStatus": "OPTIN",
+        "matchColumnName3": null
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "/rest/api/v1.3/lists/api_list_example/members",
+          "method": "POST"
+        },
+        {
+          "rel": "retrieveListRecipientsRIID",
+          "href": "/rest/api/v1.3/lists/api_list_example/members/<riid>",
+          "method": "GET"
+        },
+        {
+          "rel": "deleteListRecipientsRIID",
+          "href": "/rest/api/v1.3/lists/api_list_example/members/<riid>",
+          "method": "DELETE"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Max-Forwards",
+      "20",
+      "Via",
+      "1.0 oag02-ri5.ri5.dc2.responsys.com ()",
+      "Connection",
+      "close",
+      "X-CorrelationID",
+      "Id-e5cb9c5c11d8ba971b56e183 0",
+      "Date",
+      "Thu, 28 Mar 2019 13:28:05 GMT",
+      "Server",
+      "Apache",
+      "Content-Type",
+      "application/json;charset=UTF-8"
+    ]
+  }
+]
