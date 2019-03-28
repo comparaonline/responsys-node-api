@@ -1,4 +1,4 @@
-import { Field } from './Field';
+import { Field } from './FieldTypes';
 
 export class TableData  {
   table: {};
