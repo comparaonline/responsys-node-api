@@ -83,7 +83,7 @@ describe('Authentication', () => {
     });
   });
 
-  it('should through an error with incorrect credentials', (done) => {
+  it('should throw an error with incorrect credentials', (done) => {
     AuthConfig.password = WRONG_PASSWORD;
 
     const auth = new Authentication();
@@ -105,8 +105,7 @@ describe('Authentication', () => {
     const auth = new Authentication();
     const authRequest = new AuthenticationRequest();
 
-    auth.signin(authRequest).then((result) => {
-      const signinResult = JSON.parse(result.entity);
+    auth.signin(authRequest).then(() => {
       const refreshRequest = new RefreshRequest();
 
       auth.refresh(refreshRequest).then((result) => {
@@ -131,7 +130,7 @@ describe('Authentication', () => {
 
     const firstRefresh = new RefreshRequest(originalToken);
 
-    const firstRefreshResult = await auth.refresh(firstRefresh);
+    await auth.refresh(firstRefresh);
     const secondRefresh = new RefreshRequest(originalToken);
 
     const secondRefreshResult = await auth.refresh(secondRefresh);
@@ -142,5 +141,4 @@ describe('Authentication', () => {
     expect(secondRefreshEntity.endPoint).to.be.a('string');
   });
 });
-
 

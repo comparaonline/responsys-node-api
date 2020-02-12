@@ -7,7 +7,7 @@ export class AuthInterceptor {
 
   public get() {
     return interceptor({
-      success: (response, config, meta) => {
+      success: (response) => {
         this.authCache.set(JSON.parse(response.entity));
         return response;
       }

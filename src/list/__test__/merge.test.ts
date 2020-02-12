@@ -1,6 +1,5 @@
 import { expect } from 'chai';
 import { HttpRecorder } from 'nock-utils';
-import * as queryString from 'querystring';
 import { AuthCache } from '../../auth/AuthCache';
 import { ListMergeRequest } from '../merge/MergeRequest';
 import { ListMergeMessage } from '../merge/MergeMessage';
@@ -40,7 +39,6 @@ describe('Merge List', () => {
     const trigger = new ListMergeMessage();
 
     const result = await trigger.send(message);
-    const resultResponse = JSON.parse(result.entity);
     expect(result.status.code).to.equal(200);
   });
 
@@ -58,7 +56,6 @@ describe('Merge List', () => {
     const trigger = new ListMergeMessage();
 
     const result = await trigger.send(message);
-    const resultResponse = JSON.parse(result.entity);
     expect(result.status.code).to.equal(200);
 
   });

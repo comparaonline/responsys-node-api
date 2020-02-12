@@ -31,4 +31,6 @@ export { TableMergeRequest } from './table/merge/MergeRequest';
 export { ListMergeMessage } from './list/merge/MergeMessage';
 export { ListMergeRequest } from './list/merge/MergeRequest';
 
-
+export { AuthCache } from './auth/AuthCache';
+export { CacheProvider } from './cache-providers';
+export { MemoryCache } from './cache-providers/memory-cache';

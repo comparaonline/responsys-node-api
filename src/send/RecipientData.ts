@@ -1,5 +1,4 @@
 import { Recipient } from './Recipient';
-import * as queryString from 'querystring';
 import { OptionalData } from './OptionalData';
 
 export class RecipientData  {

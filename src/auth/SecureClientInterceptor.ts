@@ -4,16 +4,14 @@ import { Authentication } from './Authentication';
 import { AuthenticationRequest } from './AuthenticationRequest';
 
 export class SecureClientInterceptor {
-
-  private interceptor;
   private authCache = new AuthCache();
   private authentication = new Authentication();
 
   get() {
     return interceptor({
-      request: async (request, config, meta) => {
+      request: async (request) => {
         if (!this.authCache.isLoaded()) {
-          const result = await this.authentication.signin(new AuthenticationRequest());
+          await this.authentication.signin(new AuthenticationRequest());
           request.headers.Authorization = this.authCache.getToken();
 
           return request;
@@ -21,11 +19,11 @@ export class SecureClientInterceptor {
 
         return request;
       },
-      success: async (response, config, meta) => {
+      success: async (response, _, meta) => {
         const status = response.status || { code: 408 };
         if (status.code === 401 || status.code === 403) {
           const request = response.request;
-          const result = await this.authentication.signin(new AuthenticationRequest());
+          await this.authentication.signin(new AuthenticationRequest());
           request.headers.Authorization = this.authCache.getToken();
 
           return meta.client(request);
@@ -33,9 +31,7 @@ export class SecureClientInterceptor {
 
         return response;
       },
-      error: (response, config, meta) => {
-        return response;
-      }
+      error: response => response
     });
   }
 }

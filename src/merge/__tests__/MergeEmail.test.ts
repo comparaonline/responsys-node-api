@@ -5,8 +5,6 @@ import { MergeTriggerRecordData } from '../MergeTriggerRecordData';
 import { MergeTriggerEmailRequest } from '../MergeTriggerEmailRequest';
 import * as queryString from 'querystring';
 import { MergeTriggerEmailRecordData } from '../MergeTriggerEmailRecordData';
-import { Authentication } from '../../auth/Authentication';
-import { AuthenticationRequest } from '../../auth/AuthenticationRequest';
 import { AuthCache } from '../../auth/AuthCache';
 import { HttpRecorder } from 'nock-utils';
 import { OptionalData } from '../../send/OptionalData';
@@ -18,8 +16,6 @@ const CASSETTE_PATH = `${__dirname}/cassettes/mergeEmailCassette.json`;
 const recorder = new HttpRecorder(CASSETTE_PATH);
 
 describe('MergeEmail', () => {
-
-  const campaign = queryString.escape(CAMPAIGN);
   const authCache = new AuthCache();
 
   before(() => {

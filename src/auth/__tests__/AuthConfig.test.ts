@@ -2,7 +2,6 @@ import * as config from 'config';
 import { AuthConfig } from '../AuthConfig';
 import { expect } from 'chai';
 import * as fs from 'fs';
-import { AuthCache } from '../AuthCache';
 
 const PATH_TEST = `${__dirname}/../../../config/test.json`;
 

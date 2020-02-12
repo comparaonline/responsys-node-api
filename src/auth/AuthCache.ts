@@ -1,41 +1,46 @@
-import * as datastore from 'node-persist';
 import {
   KEY_ENDPOINT,
   KEY_TOKEN,
-  KEY_ISSUED_AT,
-  DEFAULT_STORE
+  KEY_ISSUED_AT
 } from '../Constants';
+import { MemoryCache } from '../cache-providers/memory-cache';
+import { CacheProvider } from '../cache-providers';
 
 export class AuthCache {
+  private static provider: CacheProvider = MemoryCache.getInstance();
+  static setProvider(provider: CacheProvider) {
+    this.provider = provider;
+    this.provider.init();
+  }
 
-  constructor (dbPath: string = DEFAULT_STORE) {
-    datastore.initSync();
+  constructor () {
+    AuthCache.provider.init();
   }
 
   set(authResponse) {
-    datastore.setItemSync(KEY_TOKEN, authResponse.authToken);
-    datastore.setItemSync(KEY_ENDPOINT, authResponse.endPoint);
-    datastore.setItemSync(KEY_ISSUED_AT, authResponse.issuedAt);
+    AuthCache.provider.set(KEY_TOKEN, authResponse.authToken);
+    AuthCache.provider.set(KEY_ENDPOINT, authResponse.endPoint);
+    AuthCache.provider.set(KEY_ISSUED_AT, authResponse.issuedAt);
   }
 
-  getToken(): string {
-    return datastore.getItemSync(KEY_TOKEN);
+  getToken(): string | undefined {
+    return AuthCache.provider.get(KEY_TOKEN);
   }
 
-  getEndpoint(): string {
-    return datastore.getItemSync(KEY_ENDPOINT);
+  getEndpoint(): string | undefined {
+    return AuthCache.provider.get(KEY_ENDPOINT);
   }
 
-  getIssued(): string {
-    return datastore.getItemSync(KEY_ISSUED_AT);
+  getIssued(): string | undefined {
+    return AuthCache.provider.get(KEY_ISSUED_AT);
   }
 
   isLoaded(): boolean {
-    return this.getToken() != null;
+    return this.getToken() !== undefined;
   }
 
   clear(): void {
-    datastore.clearSync();
+    AuthCache.provider.clear();
   }
 
 }

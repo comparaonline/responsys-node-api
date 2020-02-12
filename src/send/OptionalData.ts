@@ -1,10 +1,7 @@
 
 export class OptionalData {
-  private name: string;
-  private value: string;
-
-  constructor (name: string, value: string) {
-    this.name = name;
-    this.value = value;
-  }
+  constructor(
+    public readonly name: string,
+    public readonly value: string
+  ) { }
 }

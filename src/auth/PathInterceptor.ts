@@ -6,7 +6,7 @@ export class PathInterceptor {
 
   get() {
     return interceptor({
-      request: (request, config, meta) => {
+      request: (request) => {
         return this.addPath(request);
       }
     });

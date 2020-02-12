@@ -8,17 +8,10 @@ const HEADERS = {
 };
 
 export class Request {
-
-  private entity: string;
-  private method: string;
-  private headers: string;
-  private path: string;
-
   constructor(
-    entity: string, path: string, headers: any = HEADERS, method: string = HTTP_METHOD_POST) {
-    this.entity = entity;
-    this.path = path;
-    this.method = method;
-    this.headers = headers;
-  }
+    public readonly entity: string,
+    public readonly path: string,
+    public readonly headers: any = HEADERS,
+    public readonly method: string = HTTP_METHOD_POST
+  ) {}
 }

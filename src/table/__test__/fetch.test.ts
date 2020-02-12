@@ -6,7 +6,6 @@ import { TableFetchRequest } from '../fetch/Request';
 import { TableFetchMessage } from '../fetch/Message';
 
 const TABLE_NAME = 'test_api_responsys';
-const TABLE_NAME_INVALID = 'test_api_responsys_invalid';
 const FOLDER_NAME =  queryString.escape('test_api');
 const CASSETTE_PATH = `${__dirname}/cassettes/fetchTable.json`;
 
@@ -32,7 +31,6 @@ describe('Fetch Table', () => {
     const trigger = new TableFetchMessage();
 
     const result = await trigger.send(message);
-    const resultResponse = JSON.parse(result.entity);
     expect(result.status.code).to.equal(200);
   });
 

@@ -1,6 +1,5 @@
 import { expect } from 'chai';
 import * as config from 'config';
-import * as express from 'express';
 import { AuthCache } from '../AuthCache';
 import { PathInterceptor } from '../PathInterceptor';
 import * as rest from 'rest';
@@ -51,7 +50,7 @@ describe('PathInterceptor', () => {
     });
   });
 
-  it('should through an error if authentication not loaded.', (done) => {
+  it('should throw an error if authentication not loaded.', (done) => {
     expect(authCache.isLoaded()).to.be.false;
 
     client(PATH).then(() => {

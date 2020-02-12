@@ -1,7 +1,6 @@
 import * as config from 'config';
 import { ERROR } from '../Constants';
 
-
 export class AuthConfig {
   static endpoint;
   static username;
@@ -14,8 +13,12 @@ export class AuthConfig {
     this.setUsername(username);
 
     if (this.isDataValid()) {
-      throw new Error(ERROR +
-        `Endpoint: ${this.endpoint} Username: ${this.username} No Password: ${!this.password}`);
+      throw new Error([
+        ERROR,
+        `Endpoint: ${this.endpoint}`,
+        `Username: ${this.username}`,
+        `No Password: ${!this.password}`
+      ].join(' '));
     }
   }
 

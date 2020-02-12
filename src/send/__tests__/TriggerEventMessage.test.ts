@@ -9,7 +9,6 @@ import { ListName } from '../ListName';
 import { TriggerEventMessageRequest } from '../TriggerEventMessageRequest';
 import { TriggerEventMessage } from '../TriggerEventMessage';
 
-const EVENT_NAME = 'test';
 const CASSETTE_PATH = `${__dirname}/cassettes/triggerEventMessageCassette.json`;
 
 const recorder = new HttpRecorder(CASSETTE_PATH);

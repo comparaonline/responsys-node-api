@@ -63,7 +63,6 @@ describe('Create Table', () => {
     const trigger = new TableCreateMessage();
 
     const result = await trigger.send(message);
-    const resultResponse = JSON.parse(result.entity);
 
     expect(result.status.code).to.equal(200);
   });

@@ -7,7 +7,6 @@ import { TableMergeRequest } from '../merge/MergeRequest';
 import { TableMergeMessage } from '../merge/MergeMessage';
 
 const TABLE_NAME = 'test_api_responsys';
-const TABLE_NAME_INVALID = 'test_api_responsys_invalid';
 const FOLDER_NAME =  queryString.escape('test_api');
 const CASSETTE_PATH = `${__dirname}/cassettes/mergeTable.json`;
 const currentDate = '2019-03-22T11:54:40.531Z';
@@ -42,7 +41,6 @@ describe('Merge Table', () => {
     const trigger = new TableMergeMessage();
 
     const result = await trigger.send(message);
-    const resultResponse = JSON.parse(result.entity);
     expect(result.status.code).to.equal(200);
   });
 
@@ -89,6 +87,5 @@ describe('Merge Table', () => {
     expect(resultResponse.detail).to.not.null;
 
   });
-
 
 });

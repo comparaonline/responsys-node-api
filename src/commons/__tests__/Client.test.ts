@@ -1,11 +1,9 @@
-import * as rest from 'rest';
 import * as express from 'express';
 import * as config from 'config';
 import { Client } from '../Client';
 import { Options } from '../Options';
 import { Request } from '../Request';
 import { expect } from 'chai';
-import { error } from 'util';
 import { AuthCache } from '../../auth/AuthCache';
 
 const TEST_URL = 'http://127.0.0.1:3000';
@@ -26,7 +24,7 @@ let errorCount;
 
 function startServer(fails: number) {
   const app = express();
-  app.get('/', (req, res) => {
+  app.get('/', (_, res) => {
     if (errorCount >= fails) {
       errorCount = 0;
       return res.send(TEST_RESULT);
@@ -43,7 +41,7 @@ class TestClient extends Client {
     super(options);
   }
 
-  call(request: any, options?: Options) {
+  call(request: any) {
     return super.call(request);
   }
 }

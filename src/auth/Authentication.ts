@@ -9,7 +9,7 @@ export class Authentication {
   private authInterceptor = new AuthInterceptor().get();
 
   /**
-   * Signin takes all necessary parameters to handle authentication. 
+   * Signin takes all necessary parameters to handle authentication.
    * The endpoint will be the one assigned to the company by Responsis,
    * likely one of https://login[2,5].responsys.net/rest/api/v1.3/auth/token
    *
@@ -21,7 +21,7 @@ export class Authentication {
    * }
    * The authToken must be used for future requests to the API using the endPoint
    * URL provided. This token expires after at most 2 hours.
-   * 
+   *
    * @param authRequest Encapsulates username, password and endpoint.
    */
   public signin(authRequest: AuthenticationRequest): rest.ResponsePromise {
@@ -40,7 +40,7 @@ export class Authentication {
     const client = rest
       .wrap(errorCode)
       .wrap(this.authInterceptor);
-      
+
     return client(authRefresh);
   }
 }

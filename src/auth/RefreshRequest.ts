@@ -7,7 +7,6 @@ import {
   TYPE_TOKEN
 } from '../Constants';
 
-
 const URL = config.get('auth.endPoint') as string;
 
 export class RefreshRequest extends Request {
