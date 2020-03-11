@@ -1,6 +1,6 @@
 {
   "name": "@comparaonline/responsys-node-api",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Responsys REST API connector",
   "author": "Lisandro Pavetti and Tony Suarez",
   "license": "MIT",
